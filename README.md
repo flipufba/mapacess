@@ -1,6 +1,3 @@
----
-
-```markdown
 # 🗺️ Mapeamento de Informações Geoespaciais Remotas e Colaborativas da Acessibilidade Universal Urbana
 
 Este repositório reúne dados e scripts relacionados ao **mapeamento geoespacial da acessibilidade urbana**, com base em dados obtidos a partir da pesquisa de **Danielle Cazumba (UFBA, 2024)**.
