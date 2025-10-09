@@ -55,7 +55,7 @@ Essa pasta contém **duas subpastas** e **três arquivos principais**:
 │   │   ├── ICAM_Barra_OK.shp
 │   │   ├── ICAM_Barra_OK.dbf
 │   │   ├── ...
-│   ├── planilha_analises.xlsx
+│   ├── planilha caminhabilidade.xlsx
 │   ├── ...
 
 ````
@@ -70,7 +70,7 @@ Os arquivos complementares (como planilhas) contêm dados tabulares e análises 
 
 Os dados foram inseridos em uma base de dados **PostgreSQL 14** com **extensão PostGIS** instalada.
 
-A configuração foi realizada em uma máquina do **Laboratório de Fotogrametria e Sensoriamento Remoto (LFSR)**, com as seguintes informações:
+A configuração foi realizada em uma máquina do **Laboratório de Fotogrametria e Sensoriamento Remoto (LabFSR)**, com as seguintes informações:
 
 | Parâmetro | Valor |
 |------------|--------|
@@ -107,9 +107,12 @@ shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_OK.shp barra.icam_ok | psql -h local
 
 ## 🔍 Próximas Etapas
 
+* [ ] Tratamento dos dados e viabilidade de melhorias
+* [ ] Viabilizar possibilidade de acréscimo de variáveis e dados
 * [ ] Organização das análises derivadas por categoria temática
 * [ ] Estruturação dos scripts SQL para automação da ingestão
 * [ ] Integração com ambientes SIG (QGIS / GeoServer)
+* [ ] Possibilidade de criação de plugin QGIS para divulgação do método
 * [ ] Documentação técnica dos metadados espaciais
 
 ---
@@ -118,7 +121,7 @@ shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_OK.shp barra.icam_ok | psql -h local
 
 * **Autoria dos dados originais:** Danielle Marques Cazumba
 * **Tratamento e ingestão em base de dados:** Felipe Reis da Cruz
-* **Instituição:** Universidade Federal da Bahia — Laboratório de Fotogrametria e Sensoriamento Remoto
+* **Instituição:** Universidade Federal da Bahia  — Escola Politécnica da UFBA — Laboratório de Fotogrametria e Sensoriamento Remoto
 
 ---
 
