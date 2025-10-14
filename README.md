@@ -127,5 +127,3 @@ shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_OK.shp barra.icam_ok | psql -h local
 
 > 💡 *Este repositório tem caráter técnico e acadêmico, voltado à documentação e reprodutibilidade do processo de ingestão, tratamento e análise de dados geoespaciais da acessibilidade urbana.*
 ```
-
-
