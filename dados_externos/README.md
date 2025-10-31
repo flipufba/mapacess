@@ -183,7 +183,7 @@ O banco de dados (schema `public` ou `mapacess`) deverá conter as seguintes cam
       * **Geometria:** Geometrias unificadas de `sefaz.poste_p`, `sefaz.arvore_isolada_p`, `osm.point` (onde `origem`='barrier\_p' ou 'amenity\_p' ou 'bus\_stop\_p').
       * **Atributos (Colunas):**
           * `tipo` (Tipo: `text` - Preenchido com 'poste', 'arvore', 'banco', 'parada\_onibus', 'barreira', etc.)
-          * `subtipo` (Tipo: `text` - Preenchido com a tag original, ex: `barrier=bollard`)
+          * `subtipo` (Tipo: `text` - Preenchido com a tag original, ex: `barrier=gate`)
           * `nome` (Tipo: `text` - Preenchido via `name` do OSM)
 
 -----
