@@ -108,7 +108,7 @@ A segunda frente de coleta focou na extração de dados colaborativos da platafo
 
     * **Mobiliário e Contexto:**
         * `bus_stop_p`, `highway_stop_p` (Paradas de ônibus - ponto)
-        * `amenity_p` / `_a` (Mobiliário urbano, ex: bancos, lixeiras)
+        * `amenity_p` / `_a` (Comodidades, ex: bancos, shoppings)
         * `building_a` (Edificações - polígono)
 
 #### 2.3. Resultado
