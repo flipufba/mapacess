@@ -68,23 +68,32 @@ Os arquivos complementares (como planilhas) contêm dados tabulares e análises 
 
 ## 🗃️ Base de Dados
 
-Os dados foram inseridos em uma base de dados **PostgreSQL 14** com **extensão PostGIS** instalada.
-
-A configuração foi realizada em uma máquina do **Laboratório de Fotogrametria e Sensoriamento Remoto (LabFSR)**, com as seguintes informações:
+Todos os dados do projeto estão centralizados em uma base de dados **PostgreSQL 14** com **extensão PostGIS** instalada, hospedada no **Laboratório de Fotogrametria e Sensoriamento Remoto (LabFSR)**.
 
 | Parâmetro | Valor |
 |------------|--------|
-| IP         | `10.131.32.26` |
-| Porta      | `5432` |
+| IP         | `10.131.32.26` |
+| Porta      | `5432` |
 | Banco de dados | `mapacess` |
-| Schema     | `barra` |
-| Status     | Em análise de viabilidade de acesso externo (rede local atualmente) |
+
+### Estrutura de Schemas
+
+O banco está organizado nos seguintes schemas, de acordo com a origem dos dados:
+
+* **`barra`:** Contém os dados originais e processados da pesquisa de **Danielle Cazumba (2024)**, focados na área da Barra (ex: `barra.icam`, `barra.icam_ok`).
+* **`sefaz`:** Contém os dados cartográficos oficiais da Prefeitura de Salvador (SEFAZ/SEDUR) para as áreas de estudo (ex: `sefaz.passeio_a`, `sefaz.rampa_a`). Os dados são ingeridos em tabelas separadas por camada.
+* **`osm`:** Contém os dados colaborativos do OpenStreetMap. Devido à sua natureza granular, os dados são ingeridos e unificados em três tabelas principais baseadas em geometria: `osm.point`, `osm.line` e `osm.polygon`, com uma coluna `origem` para rastreabilidade.
+
 
 ---
 
 ## 🧩 Ingestão dos Dados
 
-A ingestão dos shapefiles foi realizada com o utilitário **`shp2pgsql`**, conforme os comandos abaixo:
+A ingestão de dados no banco `mapacess` é realizada por diferentes métodos, dependendo da fonte e da sua complexidade.
+
+### 1\. Dados da Pesquisa Original (Schema `barra`)
+
+A ingestão inicial dos shapefiles da pesquisa de Danielle Cazumba (dados `ICAM_Barra_Copia` e `ICAM_Barra_OK`) foi realizada com o utilitário **`shp2pgsql`**, conforme os comandos abaixo:
 
 ```bash
 # Diretório dos dados ICAM
@@ -98,19 +107,29 @@ cd ~/felipe/gits/mapacess/Dados_ICAM/barra_ok
 
 # Importação da camada ICAM_Barra_OK
 shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_OK.shp barra.icam_ok | psql -h localhost -U user -d mapacess -W
-````
+```
 
-> **Nota:**
-> O sistema de referência utilizado é **SIRGAS 2000 / UTM Zona 24S (EPSG:31984)** e a codificação de caracteres foi definida como **UTF-8**.
+> **Nota:** O sistema de referência utilizado é **SIRGAS 2000 / UTM Zona 24S (EPSG:31984)** e a codificação de caracteres foi definida como **UTF-8**.
+
+### 2\. Dados Externos (Schemas `sefaz` e `osm`)
+
+Para a ingestão de fontes de dados externas (como os GeoPackages da SEFAZ e OSM), foram desenvolvidos scripts de automação para garantir um tratamento consistente, reprodutível e adaptado à estrutura de cada fonte.
+
+  * **Localização:** Todos os scripts de ingestão estão localizados na pasta [`src/`](./src/) do repositório.
+  * **Tecnologia:** São scripts `bash` que utilizam a ferramenta `ogr2ogr` (parte da biblioteca GDAL) para processar os arquivos `.gpkg` e carregá-los no PostGIS.
+  * **Metodologias de Ingestão:**
+      * **SEFAZ (`src/import_sefaz.sh`):** Utiliza uma abordagem **1-para-1**, onde cada camada do GeoPackage de origem é importada como uma tabela individual no schema `sefaz` (ex: `sefaz.passeio_a`).
+      * **OSM (`src/import_osm.sh`):** Utiliza uma abordagem de **unificação (Muitos-para-3)**. Todas as dezenas de camadas granulares extraídas do QuickOSM são consolidadas em apenas três tabelas (`osm.point`, `osm.line`, `osm.polygon`), com uma coluna `origem` adicionada para rastrear a camada-fonte de cada feição.
+
 
 ---
 
 ## 🔍 Próximas Etapas
 
 * [ ] Tratamento dos dados e viabilidade de melhorias
-* [ ] Viabilizar possibilidade de acréscimo de variáveis e dados
-* [ ] Organização das análises derivadas por categoria temática
-* [ ] Estruturação dos scripts SQL para automação da ingestão
+* [x] Viabilizar possibilidade de acréscimo de variáveis e dados
+* [x] Organização das análises derivadas por categoria temática
+* [x] Estruturação dos scripts SQL para automação da ingestão
 * [ ] Integração com ambientes SIG (QGIS / GeoServer)
 * [ ] Possibilidade de criação de plugin QGIS para divulgação do método
 * [ ] Documentação técnica dos metadados espaciais
