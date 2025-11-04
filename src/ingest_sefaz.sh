@@ -39,7 +39,7 @@ while read -r line; do
     ogr2ogr -f "PostgreSQL" "$DB" "$GPKG" \
         -nln "$SCHEMA.$LAYER_NAME" -nlt "$NLT" \
         -lco GEOMETRY_NAME=geom -lco FID=gid -lco precision=NO \
-        -sql "$SQL" -overwrite -a_srs EPSG:4326
+        -sql "$SQL" -overwrite -a_srs EPSG:31984
 
 done < <(ogrinfo -ro -so "$GPKG" | grep -E "^[[:space:]]*[0-9]+:" | sed -E 's/^[[:space:]]*[0-9]+:[[:space:]]*//')
 
