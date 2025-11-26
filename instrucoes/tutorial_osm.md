@@ -22,7 +22,8 @@ Para o mapeamento das travessias e conexões, adotamos rigorosamente o modelo to
 
 
 
-[Image of pedestrian crossing schema]
+![ViaLibera?! Tagging Schema](ref/800px-ViaLiberaSchema.jpg)
+
 
 
 > **Legenda e Topologia:**
