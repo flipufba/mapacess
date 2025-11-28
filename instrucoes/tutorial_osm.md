@@ -97,7 +97,7 @@ Para o mapeamento das travessias e conexões, adotamos rigorosamente o modelo to
 | | | `raised` | Degrau alto. | **Inacessível** |
 | | | `flush` | Nivelado. | **Acessível** |
 | **Acessibilidade** | `wheelchair` | `no` | Se `kerb=raised`. | - |
-| **Detalhes** | `tactile_paving` | `yes`/`no` | Se toca o meio-fio. | - |
+| **Detalhes** | `tactile_paving` | `yes`/`no` | Se sinaliza a travesia. | - |
 
 ### 4.5. Atração e Fachadas
 
