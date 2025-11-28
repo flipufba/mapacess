@@ -123,7 +123,7 @@ Antes de desenhar, garanta que você está vendo a imagem correta.
 3.  Ajuste o brilho se necessário para distinguir o meio-fio.
 
 > ![Adiciona ortofoto](ref/gif1.gif)
-> *Sugestão:* Print do painel lateral do iD Editor mostrando a opção "Custom" selecionada e a imagem de satélite de alta resolução ao fundo.
+> Procedimento de configuração de geosserviço da ortofoto de Salvador
 
 ---
 
@@ -135,7 +135,7 @@ O primeiro passo é criar o caminho longitudinal.
 4.  **Tags Automáticas:** Certifique-se de que `highway=footway` e `footway=sidewalk` estão preenchidos.
 
 > ![Vetoriza Calçada](ref/gif2.gif)
-> *Sugestão:* Print mostrando uma linha vermelha sendo desenhada sobre uma calçada da Av. Centenário, com o painel de tags à esquerda preenchido.
+> Vetorização da calçada seguindo o meio visível da feição na ortofoto.
 
 ---
 
@@ -147,7 +147,7 @@ Aqui criamos a ponte entre os dois lados da rua.
 4.  **Tags:** `footway=crossing`.
 
 > ![Vetoriza travessia](ref/gif3.gif)
-> *Sugestão:* Print focado no momento em que a linha da travessia toca a linha da calçada, destacando a conexão física (o nó branco de junção).
+> Vetorização de travessia criando nós conforme *taggeamento* proposto no ViaLibera?!
 
 ---
 
