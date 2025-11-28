@@ -159,32 +159,32 @@ Agora vamos transformar os nós de junção em elementos de acessibilidade.
 2.  No campo de busca de etiquetas, digite **"Kerb"** ou **"Meio-fio"**.
 3.  Preencha o valor (ex: `lowered` para rebaixado, `flush` para nivelado e `raised` para desnível elevado ).
 
-> **[INSERIR PRINT 4 AQUI]**
-> *Sugestão:* Print com o nó da borda selecionado e o painel mostrando a tag `barrier=kerb` + `kerb=lowered`.
+> ![Caracteriza o meio fio](ref/gif4.gif)
+> Caracterização dos nós que representam *kerb* ou meio fio ou desnível na rota de travessia.
 
 **B. O Eixo da Rua (Nó C):**
 1.  Dê um duplo clique onde a linha da travessia cruza a linha da rua (linha azul). Isso cria um novo nó.
 2.  Etiquete este nó como **"Travessia"** (`highway=crossing`).
 3.  Defina se tem semáforo ou é faixa simples.
 
-> **[INSERIR PRINT 5 AQUI]**
-> *Sugestão:* Print mostrando o nó no meio da rua selecionado, com as tags de `crossing` visíveis.
+> ![Caracteriza o nó central de travessia](ref/gif4.gif)
+> Caracterização de nó central da travessia de pedestre.
 
 ---
 
 ## 5. Referência Visual de Tags (Exemplos)
 
 ### Exemplo: Calçada Padrão (Concreto)
-> **[INSERIR PRINT 6 AQUI]**
-> *Print daquele exemplo que você mandou da calçada de concreto com tags preenchidas.*
+> ![Tags da calçada](ref/print24.png)
+> Exemplos de Tags da calçada preenchidas.
 
 ### Exemplo: Meio-Fio Inacessível
-> **[INSERIR PRINT 7 AQUI]**
-> *Print de um nó com `kerb=raised` e `wheelchair=no`.*
+> ![Tags do meio-fio](ref/print25.png)
+> Exemplos de Tags do meio-fio(kerb) preenchidas.
 
 ### Exemplo: Travessia Completa
-> **[INSERIR PRINT 8 AQUI]**
-> *Print de uma linha de travessia com `crossing:markings=zebra`.*
+> ![Tags da travessia](ref/print26.png)
+> Exemplos de Tags da travessia preenchidas.
 
 -----
 
