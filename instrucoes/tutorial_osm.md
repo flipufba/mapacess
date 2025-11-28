@@ -142,8 +142,8 @@ O primeiro passo é criar o caminho longitudinal.
 ### Passo 3: Criar a Conexão da Travessia (Via 4)
 Aqui criamos a ponte entre os dois lados da rua.
 1.  Comece a linha clicando na **Linha da Calçada** que você acabou de desenhar (o nó deve "grudar" ou fazer *snap* na linha).
-2.  Atravesse a rua e clique na **Calçada do outro lado**.
-3.  Selecione o tipo e altere para **"Travessia de Pedestres"**.
+2.  Atravesse a rua clicando nas mudanças entre calça, meio-fio e rua para criar os nós os quais serão *taggeados* e finalize com um clique na **Calçada do outro lado**.
+3.  Selecione a *Feature Type* altere para **"Marked Crossing"**.
 4.  **Tags:** `footway=crossing`.
 
 > **[INSERIR PRINT 3 AQUI]**
@@ -157,7 +157,7 @@ Agora vamos transformar os nós de junção em elementos de acessibilidade.
 **A. O Meio-Fio (Nós B e D):**
 1.  Selecione o nó onde a travessia toca a calçada.
 2.  No campo de busca de etiquetas, digite **"Kerb"** ou **"Meio-fio"**.
-3.  Preencha o valor (ex: `lowered` para rebaixado).
+3.  Preencha o valor (ex: `lowered` para rebaixado, `flush` para nivelado e `raised` para desnível elevado ).
 
 > **[INSERIR PRINT 4 AQUI]**
 > *Sugestão:* Print com o nó da borda selecionado e o painel mostrando a tag `barrier=kerb` + `kerb=lowered`.
@@ -173,8 +173,6 @@ Agora vamos transformar os nós de junção em elementos de acessibilidade.
 ---
 
 ## 5. Referência Visual de Tags (Exemplos)
-
-*(Aqui entram as tabelas que já fizemos, mas agora podemos colocar um print de exemplo real ao lado de cada tabela)*
 
 ### Exemplo: Calçada Padrão (Concreto)
 > **[INSERIR PRINT 6 AQUI]**
