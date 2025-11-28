@@ -122,7 +122,7 @@ Antes de desenhar, garanta que você está vendo a imagem correta.
 2.  Cole a URL WMS da PMS 2024.
 3.  Ajuste o brilho se necessário para distinguir o meio-fio.
 
-> **[INSERIR PRINT 1 AQUI]**
+> ![Adiciona ortofoto](ref/gif1.gif)
 > *Sugestão:* Print do painel lateral do iD Editor mostrando a opção "Custom" selecionada e a imagem de satélite de alta resolução ao fundo.
 
 ---
@@ -134,7 +134,7 @@ O primeiro passo é criar o caminho longitudinal.
 3.  Ao terminar, selecione o tipo **"Caminho de Pedestre"** no menu esquerdo.
 4.  **Tags Automáticas:** Certifique-se de que `highway=footway` e `footway=sidewalk` estão preenchidos.
 
-> **[INSERIR PRINT 2 AQUI]**
+> ![Vetoriza Calçada](ref/gif2.gif)
 > *Sugestão:* Print mostrando uma linha vermelha sendo desenhada sobre uma calçada da Av. Centenário, com o painel de tags à esquerda preenchido.
 
 ---
@@ -146,7 +146,7 @@ Aqui criamos a ponte entre os dois lados da rua.
 3.  Selecione a *Feature Type* altere para **"Marked Crossing"**.
 4.  **Tags:** `footway=crossing`.
 
-> **[INSERIR PRINT 3 AQUI]**
+> ![Vetoriza travessia](ref/gif3.gif)
 > *Sugestão:* Print focado no momento em que a linha da travessia toca a linha da calçada, destacando a conexão física (o nó branco de junção).
 
 ---
