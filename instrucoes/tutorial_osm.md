@@ -1,12 +1,18 @@
 # 📘 Protocolo Técnico de Mapeamento: Av. Centenário (MapAcess)
 
-**Versão:** 1.0 (Remote-First)
-**Metodologia:** Baseado em Cazumba (2024) e *ViaLibera* (Biagi et al., 2020).
-**Estratégia:** Geometria via Ortofoto PMS 2024 (7,5cm) + Atributos via Street View.
+**Versão:** 1.2 
+**Estratégia:** Aquisição de geometria via Ortofoto PMS 2024 (7,5cm) + Atributos via Street View.
 
----
+-----
 
-## 1. Configuração do Ambiente (iD Editor)
+## 1\. Objetivo
+
+Realizar o mapeamento colaborativo e o preenchimento sistemático de atributos semânticos (tags) dos elementos de acessibilidade na região da Avenida Centenário e entorno.
+O trabalho utiliza uma adaptação das metodologias de Biagi et al. (2020) e Cazumba (2024) com a finalidade de produzir subsídios robustos e reprodutíveis para análise de acessibilidade e caminhabilidade em contexto urbano.
+
+-----
+
+## 2\. Configuração do Ambiente (iD Editor)
 
 Para garantir a precisão geométrica exigida, não utilize o mapa padrão.
 
@@ -14,86 +20,178 @@ Para garantir a precisão geométrica exigida, não utilize o mapa padrão.
     `https://geo.salvador.ba.gov.br/imageserver/services/Ortofotos/2024/ImageServer/WMSServer?service=WMS&request=GetMap&version=1.1.1&layers=2024&styles=&format=image/png&srs={proj}&bbox={bbox}&width={width}&height={height}`
 2.  **Visualização:** Utilize duas abas/telas: uma com o editor e outra com o Google Street View (GSV) para verificação de atributos.
 
----
+-----
 
-## 2. Esquema Topológico de Referência (Geometria)
+## 3\. Esquema Topológico de Referência (Geometria)
 
 Para o mapeamento das travessias e conexões, adotamos rigorosamente o modelo topológico do projeto **ViaLibera**.
 
-
-
 ![ViaLibera?! Tagging Schema](ref/800px-ViaLiberaSchema.jpg)
 
-
-
 > **Legenda e Topologia:**
-> * **Vias 1 e 3 (Vermelho):** Calçadas (`highway=footway` + `footway=sidewalk`).
-> * **Via 2 (Azul):** Eixo da rua (Veículos).
-> * **Via 4 (Verde):** Travessia de Pedestres (`footway=crossing`). Deve conectar as duas calçadas.
-> * **Pontos B e D:** Meios-Fios/Rampas (`barrier=kerb`). Onde a calçada encontra a travessia.
-> * **Ponto C:** Nó da travessia (`highway=crossing`). Onde a travessia cruza a rua.
 >
-> *Fonte da Imagem: Projeto ViaLibera (Biagi et al., 2020). Licença: CC-BY 4.0.*
+>   * **Vias 1 e 3 (Vermelho):** Calçadas (`highway=footway` + `footway=sidewalk`).
+>   * **Via 2 (Azul):** Eixo da rua (Veículos).
+>   * **Via 4 (Verde):** Linha da Travessia (`footway=crossing`). Conecta as calçadas.
+>   * **Pontos B e D:** Nós de Meio-Fio (`barrier=kerb`). Interface Calçada/Rua.
+>   * **Ponto C:** Nó Central (`highway=crossing`). Interface Travessia/Rua.
+>
+> *Fonte: Projeto ViaLibera (Biagi et al., 2020). CC-BY 4.0.*
+
+-----
+
+## 4\. Tabelas de Etiquetagem (Tagging)
+
+### 4.1. Calçadas (Sidewalks) - Vias 1 e 3
+
+*Objeto: Linha separada da rua.*
+
+| Elemento | Chave (Key) | Valor (Value) | Critério Visual (GSV / Ortofoto) |
+| :--- | :--- | :--- | :--- |
+| **Identificação** | `highway` | `footway` | Obrigatório. |
+| **Subtipo** | `footway` | `sidewalk` | Obrigatório. |
+| **Superfície** | `surface` | `concrete` | Cimento, placas de concreto. |
+| | | `paving_stones` | Pedras portuguesas, blocos intertravados. |
+| | | `asphalt` | Asfalto. |
+| **Condição** | `smoothness` | `excellent` | Novo, sem falhas. |
+| | | `good` | Estável, poucas emendas. |
+| | | `bad` | Buracos, raízes expostas. |
+| **Acessibilidade** | `tactile_paving` | `yes` / `no` | Se visível nas fotos. |
+| **Uso** | `bicycle` | `no` | (Opcional) Explícito se não for ciclovia. |
+
+### 4.2. Linha da Travessia - Via 4
+
+*Objeto: Linha que conecta as duas calçadas.*
+
+| Elemento | Chave (Key) | Valor (Value) | Critério Visual |
+| :--- | :--- | :--- | :--- |
+| **Identificação** | `highway` | `footway` | Obrigatório. |
+| | `footway` | `crossing` | Obrigatório. |
+| **Pintura** | `crossing` | `marked` | Se houver pintura. |
+| **Tipo de Faixa** | `crossing:markings` | `zebra` | Faixa listrada (Zebra). |
+| | | `lines` | Linhas paralelas. |
+| **Meio-fio** | `kerb` | `yes` | Indica presença de desnível na rota. |
+| **Acessibilidade** | `wheelchair` | `yes` | Se plana e segura. |
+| | | `no` | Se perigosa/inadequada. |
+
+### 4.3. Nó Central da Travessia - Ponto C
+
+*Objeto: Ponto (Node) onde a travessia cruza o eixo da rua.*
+
+| Elemento | Chave (Key) | Valor (Value) | Critério Visual |
+| :--- | :--- | :--- | :--- |
+| **Identificação** | `highway` | `crossing` | Obrigatório no nó. |
+| | `footway` | `crossing` | (Reforço de identificação). |
+| **Controle** | `crossing` | `traffic_signals` | Semáforo. |
+| | | `uncontrolled` | Faixa sem semáforo. |
+| **Pintura** | `crossing:markings` | `zebra` | Confirmar tipo de pintura. |
+
+### 4.4. Meios-Fios e Rampas (Kerbs) - Pontos B e D
+
+*Objeto: Ponto (Node) exato da transição Calçada/Rua.*
+
+| Elemento | Chave (Key) | Valor (Value) | Critério Visual | Status Acessibilidade |
+| :--- | :--- | :--- | :--- | :--- |
+| **Barreira** | `barrier` | `kerb` | Obrigatório. | - |
+| **Tipo** | `kerb` | `lowered` | Rampa/Rebaixado. | **Acessível** |
+| | | `raised` | Degrau alto. | **Inacessível** |
+| | | `flush` | Nivelado. | **Acessível** |
+| **Acessibilidade** | `wheelchair` | `no` | Se `kerb=raised`. | - |
+| **Detalhes** | `tactile_paving` | `yes`/`no` | Se toca o meio-fio. | - |
+
+### 4.5. Atração e Fachadas
+
+*Objeto: Pontos (`Node`) ou Polígonos das edificações.*
+
+| Elemento | Chave (Key) | Valor (Value) | Critério Visual |
+| :--- | :--- | :--- | :--- |
+| **Entrada** | `entrance` | `main` | Porta principal aberta. |
+| **Uso** | `shop` | `bakery`, `clothes`... | Vitrines visíveis. |
+| | `amenity` | `restaurant`, `bank`... | Serviços visíveis. |
+| **Altura** | `building:levels`| `<número>` | Contagem de andares. |
+
+-----
+
+## 5\. Passo a Passo: Aquisição Geométrica e Topológica
+
+Esta seção detalha a sequência de cliques para desenhar a rede de pedestres com a precisão necessária para roteamento.
+
+### Passo 1: Preparar a Base (Ortofoto)
+Antes de desenhar, garanta que você está vendo a imagem correta.
+1.  Vá em **Configurações de Fundo** (Atalho `B`).
+2.  Cole a URL WMS da PMS 2024.
+3.  Ajuste o brilho se necessário para distinguir o meio-fio.
+
+> **[INSERIR PRINT 1 AQUI]**
+> *Sugestão:* Print do painel lateral do iD Editor mostrando a opção "Custom" selecionada e a imagem de satélite de alta resolução ao fundo.
 
 ---
 
-## 3. Tabelas de Etiquetagem (Tagging)
+### Passo 2: Vetorizar a Calçada (Vias 1 e 3)
+O primeiro passo é criar o caminho longitudinal.
+1.  Selecione a ferramenta **Linha** (Atalho `2`).
+2.  Clique no início e vá traçando a linha exatamente no **centro** da calçada visível na Ortofoto.
+3.  Ao terminar, selecione o tipo **"Caminho de Pedestre"** no menu esquerdo.
+4.  **Tags Automáticas:** Certifique-se de que `highway=footway` e `footway=sidewalk` estão preenchidos.
 
-### 3.1. Calçadas (Sidewalks) - Vias 1 e 3
-*Critério: Observação visual do piso e condição via GSV.*
-
-| Elemento | Chave (Key) | Valor (Value) | Critério Visual (GSV / Ortofoto) | Adaptação Cazumba |
-| :--- | :--- | :--- | :--- | :--- |
-| **Identificação** | `highway` | `footway` | Obrigatório. | - |
-| **Subtipo** | `footway` | `sidewalk` | Obrigatório. | - |
-| **Superfície** | `surface` | `paving_stones` | Pedras portuguesas, blocos intertravados. | Pavimentado |
-| | | `concrete` | Cimento, placas de concreto. | Pavimentado |
-| | | `asphalt` | Asfalto. | Pavimentado |
-| | | `sett` | Paralelepípedos. | Pavimentado |
-| **Condição** | `smoothness` | `excellent` | Novo, sem falhas. | Nota 3 (Ótimo) |
-| *(Pavimento)* | | `good` | Estável, poucas emendas. | Nota 2 (Bom) |
-| | | `intermediate` | Pedras soltas, desníveis leves. | Nota 1 (Suficiente) |
-| | | `bad` | Buracos, raízes expostas. | Nota 0 (Insuficiente) |
-| **Largura** | `width` | `<número>` | Medir com régua na Ortofoto (metros). | Largura Útil |
-| **Piso Tátil** | `tactile_paving` | `yes` / `no` | Se visível nas fotos. | Acessibilidade |
-
-### 3.2. Travessias (Crossings) - Via 4 e Ponto C
-*Critério: Conexão entre os lados da via.*
-
-| Elemento | Objeto | Chave (Key) | Valor (Value) | Critério Visual (GSV) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Identificação** | Linha (4) | `footway` | `crossing` | - |
-| **Tipo** | Nó (C) | `crossing` | `traffic_signals` | Semáforo veicular + pedestre. |
-| | | | `uncontrolled` | Faixa de pedestres (zebra) sem semáforo. |
-| | | | `unmarked` | Travessia lógica na esquina, sem pintura. |
-| **Piso Tátil** | Linha (4) | `tactile_paving`| `yes` | Se houver piso de alerta no início. |
-| **Ilha** | Nó (C) | `crossing:island`| `yes` | Se houver refúgio central físico. |
-
-### 3.3. Meios-Fios e Rampas (Kerbs) - Pontos B e D
-*Critério: O ponto exato da transição calçada-rua.*
-
-| Elemento | Chave (Key) | Valor (Value) | Critério Visual (GSV) | Classificação |
-| :--- | :--- | :--- | :--- | :--- |
-| **Barreira** | `barrier` | `kerb` | Obrigatório no nó da borda. | - |
-| **Tipo** | `kerb` | `lowered` | Rampa construída ou rebaixamento total. | **Acessível** (Nota 3) |
-| | | `flush` | Nivelado (travessia elevada). | **Acessível** (Nota 3) |
-| | | `raised` | Degrau alto (> 2cm). | **Inacessível** (Nota 0) |
-| **Altura** | `kerb:height` | `<número>` | **Não preencher remotamente.** | - |
-
-### 3.4. Atração e Fachadas
-*Critério: Permeabilidade visual e física das edificações.*
-
-| Elemento | Chave (Key) | Valor (Value) | Critério Visual | Indicador Cazumba |
-| :--- | :--- | :--- | :--- | :--- |
-| **Entrada** | `entrance` | `main` | Porta principal de comércio aberta. | Permeabilidade |
-| **Uso** | `shop` | `bakery`, `clothes`... | Vitrines visíveis. | Atração |
-| | `amenity` | `restaurant`, `bank`... | Serviços visíveis. | Atração |
-| **Altura** | `building:levels`| `<número>` | Contagem de andares. | Densidade |
+> **[INSERIR PRINT 2 AQUI]**
+> *Sugestão:* Print mostrando uma linha vermelha sendo desenhada sobre uma calçada da Av. Centenário, com o painel de tags à esquerda preenchido.
 
 ---
 
-## 4. Fluxo de Trabalho e Boas Práticas
+### Passo 3: Criar a Conexão da Travessia (Via 4)
+Aqui criamos a ponte entre os dois lados da rua.
+1.  Comece a linha clicando na **Linha da Calçada** que você acabou de desenhar (o nó deve "grudar" ou fazer *snap* na linha).
+2.  Atravesse a rua e clique na **Calçada do outro lado**.
+3.  Selecione o tipo e altere para **"Travessia de Pedestres"**.
+4.  **Tags:** `footway=crossing`.
 
-1.  **Priorize a Geometria:** Use a Ortofoto 2024 para desenhar as linhas (vias 1, 3 e 4) com precisão.
-2.  **Topologia é Vital:** Garanta que a linha da travessia (4) esteja conectada fisicamente à linha da calçada (1/3) através dos nós de meio-fio (B/D). Se não conectar, o roteamento falha.
-3.  **Regra da Incerteza:** Ao verificar atributos no Street View, confira a data da imagem. Se for antiga (<2022) ou estiver obstruída, **não preencha a tag**. Deixe o valor em branco (`NULL`) para validação futura em campo.
+> **[INSERIR PRINT 3 AQUI]**
+> *Sugestão:* Print focado no momento em que a linha da travessia toca a linha da calçada, destacando a conexão física (o nó branco de junção).
+
+---
+
+### Passo 4: Definir os Nós Críticos (Topologia)
+Agora vamos transformar os nós de junção em elementos de acessibilidade.
+
+**A. O Meio-Fio (Nós B e D):**
+1.  Selecione o nó onde a travessia toca a calçada.
+2.  No campo de busca de etiquetas, digite **"Kerb"** ou **"Meio-fio"**.
+3.  Preencha o valor (ex: `lowered` para rebaixado).
+
+> **[INSERIR PRINT 4 AQUI]**
+> *Sugestão:* Print com o nó da borda selecionado e o painel mostrando a tag `barrier=kerb` + `kerb=lowered`.
+
+**B. O Eixo da Rua (Nó C):**
+1.  Dê um duplo clique onde a linha da travessia cruza a linha da rua (linha azul). Isso cria um novo nó.
+2.  Etiquete este nó como **"Travessia"** (`highway=crossing`).
+3.  Defina se tem semáforo ou é faixa simples.
+
+> **[INSERIR PRINT 5 AQUI]**
+> *Sugestão:* Print mostrando o nó no meio da rua selecionado, com as tags de `crossing` visíveis.
+
+---
+
+## 5. Referência Visual de Tags (Exemplos)
+
+*(Aqui entram as tabelas que já fizemos, mas agora podemos colocar um print de exemplo real ao lado de cada tabela)*
+
+### Exemplo: Calçada Padrão (Concreto)
+> **[INSERIR PRINT 6 AQUI]**
+> *Print daquele exemplo que você mandou da calçada de concreto com tags preenchidas.*
+
+### Exemplo: Meio-Fio Inacessível
+> **[INSERIR PRINT 7 AQUI]**
+> *Print de um nó com `kerb=raised` e `wheelchair=no`.*
+
+### Exemplo: Travessia Completa
+> **[INSERIR PRINT 8 AQUI]**
+> *Print de uma linha de travessia com `crossing:markings=zebra`.*
+
+-----
+
+## 6\. Fluxo de Trabalho e Boas Práticas
+
+1.  **Priorize a Geometria:** Use a Ortofoto 2024 para desenhar as linhas com precisão.
+2.  **Topologia é Vital:** Garanta que a Linha da Travessia (4) esteja conectada fisicamente à Calçada (1/3) através dos Nós de Meio-fio (B/D) e à Rua (2) através do Nó Central (C).
+3.  **Regra da Incerteza:** Ao verificar atributos no Street View, confira a data da imagem. Se for antiga (\<2022) ou estiver obstruída, **não preencha a tag**. Deixe o valor em branco para validação futura em campo.
