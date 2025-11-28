@@ -167,7 +167,7 @@ Agora vamos transformar os nós de junção em elementos de acessibilidade.
 2.  Etiquete este nó como **"Travessia"** (`highway=crossing`).
 3.  Defina se tem semáforo ou é faixa simples.
 
-> ![Caracteriza o nó central de travessia](ref/gif4.gif)
+> ![Caracteriza o nó central de travessia](ref/gif5.gif)
 > Caracterização de nó central da travessia de pedestre.
 
 ---
