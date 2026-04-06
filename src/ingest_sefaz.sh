@@ -1,41 +1,43 @@
 #!/bin/bash
 # ============================================================
-# Importa todas as camadas de um GeoPackage para o PostGIS,
-# criando uma tabela para cada camada no schema 'sefaz'.
+# Importa camadas do GeoPackage SEFAZ para o PostGIS
 # ============================================================
 
-# 🔧 CONFIGURAÇÃO DO BANCO
-DB="PG:host=10.131.32.26 dbname=mapacess user=user password=user"
+# 🔧 CONFIGURAÇÃO DO BANCO (Usando a conexão nativa do usuário felipe)
+DB="PG:dbname=mapacess"
 
 # 📁 ARQUIVO GPKG
-GPKG="/home/labfsr/felipe/gits/mapacess/dados_externos/sefaz.gpkg"
+GPKG="/var/gits/mapacess/dados_externos/sefaz.gpkg"
 
 # Schema destino
 SCHEMA="sefaz"
 
+# 🛠️ GARANTE QUE O SCHEMA EXISTE E PERTENCE AO FELIPE
+psql -d mapacess -c "CREATE SCHEMA IF NOT EXISTS $SCHEMA;"
+psql -d mapacess -c "ALTER SCHEMA $SCHEMA OWNER TO felipe;"
+
+echo "🚀 Iniciando a ingestão dos dados SEFAZ..."
+
 # ============================================================
 # Processa cada camada
 while read -r line; do
-    # Extrai o nome e o tipo de geometria entre parênteses
     LAYER_NAME=$(echo "$line" | sed -E 's/^(.*) \(.*/\1/')
     GEOM_TYPE=$(echo "$line" | sed -E 's/.*\((.*)\)/\1/')
-    
+
     echo "🧭 Processando camada: $LAYER_NAME"
 
-    # Normaliza o tipo geométrico para o ogr2ogr
     case "$GEOM_TYPE" in
         Point*|Multi*Point*) NLT="POINT" ;;
         Line*|Multi*Line*)   NLT="LINESTRING" ;;
-        Poly*|Multi*Poly*)   NLT="POLYGON" ;;
+        Poly*|Multi*Poly*)   NLT="PROMOTE_TO_MULTI" ;; # Melhor para dados fiscais/lotes
         *) echo "   ⚠ Tipo desconhecido ($GEOM_TYPE), ignorando."; continue ;;
     esac
 
     echo "   ➤ Tipo: $GEOM_TYPE → tabela destino: $SCHEMA.$LAYER_NAME"
 
-    # SQL opcional (adiciona campo origem)
     SQL="SELECT *, '$LAYER_NAME' AS origem FROM \"$LAYER_NAME\""
 
-    # Executa a importação (overwrite se já existir)
+    # Executa a importação
     ogr2ogr -f "PostgreSQL" "$DB" "$GPKG" \
         -nln "$SCHEMA.$LAYER_NAME" -nlt "$NLT" \
         -lco GEOMETRY_NAME=geom -lco FID=gid -lco precision=NO \
@@ -43,5 +45,4 @@ while read -r line; do
 
 done < <(ogrinfo -ro -so "$GPKG" | grep -E "^[[:space:]]*[0-9]+:" | sed -E 's/^[[:space:]]*[0-9]+:[[:space:]]*//')
 
-echo "✅ Importação concluída!"
-
+echo "✅ Importação da SEFAZ concluída!"

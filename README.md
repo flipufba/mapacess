@@ -72,7 +72,7 @@ Todos os dados do projeto estão centralizados em uma base de dados **PostgreSQL
 
 | Parâmetro | Valor |
 |------------|--------|
-| IP         | `10.131.32.26` |
+| IP         | `10.131.32.48` |
 | Porta      | `5432` |
 | Banco de dados | `mapacess` |
 
@@ -97,16 +97,26 @@ A ingestão inicial dos shapefiles da pesquisa de Danielle Cazumba (dados `ICAM_
 
 ```bash
 # Diretório dos dados ICAM
-cd ~/felipe/gits/mapacess/Dados_ICAM/icam
+cd /var/gits/mapacess/Dados_ICAM/icam
 
-# Importação da camada ICAM_Barra_Copia
-shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_Copia.shp barra.icam | psql -h localhost -U user -d mapacess -W
+# Importação da camada ICAM_Barra_Copia usando ogr2ogr
+sudo -u postgres ogr2ogr -f "PostgreSQL" PG:"dbname=mapacess" ICAM_Barra_Copia.shp \
+  -nln barra.icam \
+  -a_srs EPSG:31984 \
+  --config SHAPE_ENCODING "UTF-8" \
+  -lco SPATIAL_INDEX=GIST \
+  -overwrite
 
 # Diretório dos dados validados
-cd ~/felipe/gits/mapacess/Dados_ICAM/barra_ok
+cd /var/gits/mapacess/Dados_ICAM/barra_ok
 
-# Importação da camada ICAM_Barra_OK
-shp2pgsql -I -s 31984 -W "UTF-8" ICAM_Barra_OK.shp barra.icam_ok | psql -h localhost -U user -d mapacess -W
+# Importação da camada ICAM_Barra_OK usando ogr2ogr
+sudo -u postgres ogr2ogr -f "PostgreSQL" PG:"dbname=mapacess" ICAM_Barra_OK.shp \
+  -nln barra.icam_ok \
+  -a_srs EPSG:31984 \
+  --config SHAPE_ENCODING "UTF-8" \
+  -lco SPATIAL_INDEX=GIST \
+  -overwrite
 ```
 
 > **Nota:** O sistema de referência utilizado é **SIRGAS 2000 / UTM Zona 24S (EPSG:31984)** e a codificação de caracteres foi definida como **UTF-8**.
