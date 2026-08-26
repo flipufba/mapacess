@@ -1,4 +1,3 @@
-````markdown
 # 🗺️ MapAcess — Mapeamento Colaborativo da Microacessibilidade Urbana
 
 O **MapAcess** é um projeto acadêmico voltado à estruturação, representação e análise de informações geoespaciais relacionadas à **caminhabilidade e à microacessibilidade urbana**.
