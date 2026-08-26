@@ -1,158 +1,362 @@
-# 🗺️ Mapeamento de Informações Geoespaciais Remotas e Colaborativas da Acessibilidade Universal Urbana
+````markdown
+# 🗺️ MapAcess — Mapeamento Colaborativo da Microacessibilidade Urbana
 
-Este repositório reúne dados e scripts relacionados ao **mapeamento geoespacial da acessibilidade urbana**, com base em dados obtidos a partir da pesquisa de **Danielle Cazumba (UFBA, 2024)**.
+O **MapAcess** é um projeto acadêmico voltado à estruturação, representação e análise de informações geoespaciais relacionadas à **caminhabilidade e à microacessibilidade urbana**.
+
+O repositório reúne dados, documentação, projetos SIG e scripts utilizados no desenvolvimento e na aplicação piloto de um **protocolo colaborativo de mapeamento da infraestrutura pedonal no OpenStreetMap (OSM)**.
+
+A aplicação atualmente documentada utiliza como estudo de caso um trecho da **Avenida Centenário, em Salvador, Bahia**, com ênfase na representação de calçadas, travessias, interfaces de meio-fio e atributos associados à acessibilidade.
 
 ---
 
-## 📚 Referência da Pesquisa
+## Objetivo
 
-Os dados utilizados foram originalmente disponibilizados em formato `.zip` com o nome:
+O projeto busca sistematizar procedimentos para aquisição, interpretação, representação e análise de elementos de microacessibilidade urbana, considerando três dimensões principais:
 
-```
+- representação geométrica da infraestrutura pedonal;
+- completude e consistência semântica dos atributos;
+- conectividade e consistência topológica da rede pedonal.
 
+O objetivo da aplicação piloto não é estimar globalmente a acessibilidade da Avenida Centenário, mas avaliar a aplicabilidade de um protocolo de mapeamento estruturado e reproduzível.
+
+---
+
+## Origem do projeto
+
+O MapAcess foi inicialmente desenvolvido a partir de dados e procedimentos associados à pesquisa de **Danielle Marques Cazumba (UFBA, 2024)**:
+
+> **Proposta de Metodologia para o Mapeamento Virtual da Caminhabilidade Urbana Associada à Acessibilidade por Imagens de Nível de Rua**
+
+Os dados originais recebidos foram disponibilizados no arquivo:
+
+```text
 Dados_ICAM.zip
-
-```
-
-Hash SHA256 de verificação:
-
-```
-
-16b2db1d70b6222fe9ebb4b1ddcb42730af53aa53dbcd61582450e65a0081c45
-
-```
-
-Os dados são oriundos da tese intitulada:
-
-> **“Proposta de Metodologia para o Mapeamento Virtual da Caminhabilidade Urbana Associada à Acessibilidade por Imagens de Nível de Rua”**  
-> Autora: *Danielle Marques Cazumba*  
-> Ano: 2024  
-> Disponível no repositório da UFBA:  
-> [https://repositorio.ufba.br/handle/ri/22482/simple-search?filterquery=Cazumba%2C+Danielle+Marques&filtername=author&filtertype=equals](https://repositorio.ufba.br/handle/ri/22482/simple-search?filterquery=Cazumba%2C+Danielle+Marques&filtername=author&filtertype=equals)
-
----
-
-## 📂 Estrutura do Diretório
-
-Os dados extraídos estão armazenados na pasta:
-
-```
-
-Dados_ICAM/
-
-```
-
-Essa pasta contém **duas subpastas** e **três arquivos principais**:
-
-```
-
-├── Dados_ICAM/
-│   ├── icam/
-│   │   ├── ICAM_Barra_Copia.shp
-│   │   ├── ICAM_Barra_Copia.dbf
-│   │   ├── ...
-│   ├── barra_ok/
-│   │   ├── ICAM_Barra_OK.shp
-│   │   ├── ICAM_Barra_OK.dbf
-│   │   ├── ...
-│   ├── planilha caminhabilidade.xlsx
-│   ├── ...
-
 ````
 
-As subpastas `icam/` e `barra_ok/` contêm os arquivos vetoriais no formato **Shapefile (.shp)** e seus respectivos arquivos auxiliares (`.dbf`, `.prj`, `.shx`), com as **geometrias** e **análises espaciais** realizadas pela autora da pesquisa.
+SHA256:
 
-Os arquivos complementares (como planilhas) contêm dados tabulares e análises derivadas dos shapefiles.
-
----
-
-## 🗃️ Base de Dados
-
-Todos os dados do projeto estão centralizados em uma base de dados **PostgreSQL 14** com **extensão PostGIS** instalada, hospedada no **Laboratório de Fotogrametria e Sensoriamento Remoto (LabFSR)**.
-
-| Parâmetro | Valor |
-|------------|--------|
-| IP         | `10.131.32.48` |
-| Porta      | `5432` |
-| Banco de dados | `mapacess` |
-
-### Estrutura de Schemas
-
-O banco está organizado nos seguintes schemas, de acordo com a origem dos dados:
-
-* **`barra`:** Contém os dados originais e processados da pesquisa de **Danielle Cazumba (2024)**, focados na área da Barra (ex: `barra.icam`, `barra.icam_ok`).
-* **`sefaz`:** Contém os dados cartográficos oficiais da Prefeitura de Salvador (SEFAZ/SEDUR) para as áreas de estudo (ex: `sefaz.passeio_a`, `sefaz.rampa_a`). Os dados são ingeridos em tabelas separadas por camada.
-* **`osm`:** Contém os dados colaborativos do OpenStreetMap. Devido à sua natureza granular, os dados são ingeridos e unificados em três tabelas principais baseadas em geometria: `osm.point`, `osm.line` e `osm.polygon`, com uma coluna `origem` para rastreabilidade.
-
-
----
-
-## 🧩 Ingestão dos Dados
-
-A ingestão de dados no banco `mapacess` é realizada por diferentes métodos, dependendo da fonte e da sua complexidade.
-
-### 1\. Dados da Pesquisa Original (Schema `barra`)
-
-A ingestão inicial dos shapefiles da pesquisa de Danielle Cazumba (dados `ICAM_Barra_Copia` e `ICAM_Barra_OK`) foi realizada com o utilitário **`shp2pgsql`**, conforme os comandos abaixo:
-
-```bash
-# Diretório dos dados ICAM
-cd /var/gits/mapacess/Dados_ICAM/icam
-
-# Importação da camada ICAM_Barra_Copia usando ogr2ogr
-sudo -u postgres ogr2ogr -f "PostgreSQL" PG:"dbname=mapacess" ICAM_Barra_Copia.shp \
-  -nln barra.icam \
-  -a_srs EPSG:31984 \
-  --config SHAPE_ENCODING "UTF-8" \
-  -lco SPATIAL_INDEX=GIST \
-  -overwrite
-
-# Diretório dos dados validados
-cd /var/gits/mapacess/Dados_ICAM/barra_ok
-
-# Importação da camada ICAM_Barra_OK usando ogr2ogr
-sudo -u postgres ogr2ogr -f "PostgreSQL" PG:"dbname=mapacess" ICAM_Barra_OK.shp \
-  -nln barra.icam_ok \
-  -a_srs EPSG:31984 \
-  --config SHAPE_ENCODING "UTF-8" \
-  -lco SPATIAL_INDEX=GIST \
-  -overwrite
+```text
+16b2db1d70b6222fe9ebb4b1ddcb42730af53aa53dbcd61582450e65a0081c45
 ```
 
-> **Nota:** O sistema de referência utilizado é **SIRGAS 2000 / UTM Zona 24S (EPSG:31984)** e a codificação de caracteres foi definida como **UTF-8**.
+Esses materiais permanecem preservados em `data/raw/icam/`.
 
-### 2\. Dados Externos (Schemas `sefaz` e `osm`)
-
-Para a ingestão de fontes de dados externas (como os GeoPackages da SEFAZ e OSM), foram desenvolvidos scripts de automação para garantir um tratamento consistente, reprodutível e adaptado à estrutura de cada fonte.
-
-  * **Localização:** Todos os scripts de ingestão estão localizados na pasta [`src/`](./src/) do repositório.
-  * **Tecnologia:** São scripts `bash` que utilizam a ferramenta `ogr2ogr` (parte da biblioteca GDAL) para processar os arquivos `.gpkg` e carregá-los no PostGIS.
-  * **Metodologias de Ingestão:**
-      * **SEFAZ (`src/import_sefaz.sh`):** Utiliza uma abordagem **1-para-1**, onde cada camada do GeoPackage de origem é importada como uma tabela individual no schema `sefaz` (ex: `sefaz.passeio_a`).
-      * **OSM (`src/import_osm.sh`):** Utiliza uma abordagem de **unificação (Muitos-para-3)**. Todas as dezenas de camadas granulares extraídas do QuickOSM são consolidadas em apenas três tabelas (`osm.point`, `osm.line`, `osm.polygon`), com uma coluna `origem` adicionada para rastrear a camada-fonte de cada feição.
-
+O desenvolvimento posterior integrou dados oficiais de Salvador, OpenStreetMap, imagens em nível de rua e procedimentos baseados no modelo de representação de acessibilidade do projeto ViaLibera.
 
 ---
 
-## 🔍 Próximas Etapas
+## Estrutura do repositório
 
-* [ ] Tratamento dos dados e viabilidade de melhorias
-* [x] Viabilizar possibilidade de acréscimo de variáveis e dados
-* [x] Organização das análises derivadas por categoria temática
-* [x] Estruturação dos scripts SQL para automação da ingestão
-* [ ] Integração com ambientes SIG (QGIS / GeoServer)
-* [ ] Possibilidade de criação de plugin QGIS para divulgação do método
-* [ ] Documentação técnica dos metadados espaciais
+```text
+mapacess/
+├── data/
+│   ├── raw/
+│   │   ├── icam/
+│   │   └── external/
+│   │       ├── osm/
+│   │       ├── sefaz/
+│   │       └── prefeituras_bairro/
+│   │
+│   ├── study_area/
+│   │   └── delimita.geojson
+│   │
+│   └── derived/
+│       └── osm/
+│           ├── exploratory/
+│           └── snapshots/
+│
+├── scripts/
+│   ├── ingestion/
+│   ├── extraction/
+│   └── analysis/
+│
+├── qgis/
+│   └── projeto_qgis.qgz
+│
+├── results/
+│   ├── exploratory/
+│   ├── tables/
+│   └── figures/
+│
+├── docs/
+│   ├── assets/
+│   ├── environment.md
+│   ├── git_setup.md
+│   └── tutorial_osm.md
+│
+├── references/
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+### Organização dos dados
+
+`data/raw/` contém dados recebidos ou obtidos de fontes externas e preservados como insumos do projeto.
+
+`data/study_area/` contém a delimitação espacial utilizada na aplicação piloto. O arquivo canônico atualmente utilizado é:
+
+```text
+data/study_area/delimita.geojson
+```
+
+`data/derived/` contém dados produzidos a partir de procedimentos executados no projeto, incluindo as consultas históricas ao OpenStreetMap.
 
 ---
 
-## 🧠 Créditos
+## Fontes de dados
 
-* **Autoria dos dados originais:** Danielle Marques Cazumba
-* **Tratamento e ingestão em base de dados:** Felipe Reis da Cruz
-* **Instituição:** Universidade Federal da Bahia  — Escola Politécnica da UFBA — Laboratório de Fotogrametria e Sensoriamento Remoto
+As principais fontes utilizadas no projeto incluem:
+
+**OpenStreetMap (OSM)**
+Base geoespacial colaborativa utilizada para representação da infraestrutura pedonal e recuperação dos estados históricos analisados.
+
+**Prefeitura Municipal de Salvador**
+Dados cartográficos oficiais e Ortofoto 2024, utilizada como referência geométrica para a interpretação e vetorização dos elementos urbanos.
+
+**Google Street View**
+Imagens em nível de rua utilizadas de forma complementar para interpretação de características não suficientemente observáveis em vista superior.
+
+**Dados ICAM**
+Dados derivados da pesquisa de Danielle Marques Cazumba, preservados como referência metodológica e base histórica do projeto.
 
 ---
 
-> 💡 *Este repositório tem caráter técnico e acadêmico, voltado à documentação e reprodutibilidade do processo de ingestão, tratamento e análise de dados geoespaciais da acessibilidade urbana.*
+## Protocolo de mapeamento
+
+A aplicação piloto utiliza um protocolo desenvolvido a partir da adaptação de procedimentos descritos por **Biagi et al. (2020)** no projeto ViaLibera e por **Cazumba (2024)**.
+
+A versão utilizada como referência para a atividade colaborativa corresponde ao **Protocolo Técnico de Mapeamento da Avenida Centenário, versão 1.2**, associado ao commit:
+
+```text
+be8bccafd0b72716649a413907419fbc38028fcf
+```
+
+O escopo analisado concentra-se em:
+
+```text
+Calçadas
+    highway=footway
+    footway=sidewalk
+
+Travessias
+    highway=footway
+    footway=crossing
+
+Interfaces de meio-fio
+    barrier=kerb
+
+Nós de travessia
+    highway=crossing
+```
+
+Entre os atributos analisados encontram-se `surface`, `smoothness`, `tactile_paving`, `kerb`, `wheelchair`, `crossing` e `crossing:markings`.
+
+O tutorial utilizado durante a atividade de mapeamento encontra-se em:
+
+```text
+docs/tutorial_osm.md
+```
+
+---
+
+## Extração histórica do OpenStreetMap
+
+A recuperação histórica dos dados é realizada por meio da **ohsome API v1**, utilizando scripts Python.
+
+Os scripts encontram-se em:
+
+```text
+scripts/extraction/
+├── extrai_pt1.py
+├── extrai_pt2.py
+└── extrai_pt3.py
+```
+
+### Diagnóstico exploratório
+
+`extrai_pt1.py` recupera um estado anterior à intervenção utilizando um filtro abrangente sobre a infraestrutura viária e pedonal.
+
+Saída:
+
+```text
+data/derived/osm/exploratory/
+└── osm_centenario_2025-11-17.geojson
+```
+
+### Estado T0
+
+`extrai_pt2.py` reconstrói o estado imediatamente anterior à primeira edição incluída na aplicação analisada.
+
+Intervalo utilizado:
+
+```text
+2025-11-18T14:28:09Z
+2025-11-18T14:28:10Z
+```
+
+Saída:
+
+```text
+data/derived/osm/snapshots/
+└── osm_centenario_filt_2025-11-18.geojson
+```
+
+### Estado T1
+
+`extrai_pt3.py` reconstrói o estado imediatamente posterior à última edição considerada na aplicação.
+
+Intervalo utilizado:
+
+```text
+2026-03-01T18:21:38Z
+2026-03-01T18:21:39Z
+```
+
+Saída:
+
+```text
+data/derived/osm/snapshots/
+└── osm_centenario_filt_2026-03-01.geojson
+```
+
+O mesmo polígono espacial e o mesmo filtro analítico são utilizados em T0 e T1.
+
+---
+
+## Reprodução das extrações
+
+Recomenda-se utilizar um ambiente virtual Python:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+Na raiz do repositório, as extrações podem ser reproduzidas com:
+
+```bash
+python3 scripts/extraction/extrai_pt1.py
+python3 scripts/extraction/extrai_pt2.py
+python3 scripts/extraction/extrai_pt3.py
+```
+
+Os scripts identificam automaticamente a raiz do repositório e utilizam:
+
+```text
+data/study_area/delimita.geojson
+```
+
+como recorte espacial.
+
+---
+
+## Ambiente computacional
+
+O ambiente utilizado na etapa atual é documentado em:
+
+```text
+docs/environment.md
+```
+
+Principais componentes:
+
+| Ferramenta         |  Versão |
+| ------------------ | ------: |
+| QGIS               |  3.44.3 |
+| Python             |  3.12.3 |
+| requests           |  2.31.0 |
+| Visual Studio Code | 1.134.0 |
+| ohsome API         |      v1 |
+
+As dependências Python estão registradas em `requirements.txt`.
+
+---
+
+## Projeto QGIS
+
+O projeto SIG principal está disponível em:
+
+```text
+qgis/projeto_qgis.qgz
+```
+
+As fontes de dados armazenadas no próprio repositório utilizam caminhos relativos, permitindo que o projeto seja aberto após a clonagem sem dependência dos diretórios locais utilizados durante seu desenvolvimento.
+
+O projeto reúne dados de apoio, delimitação da área piloto e os estados históricos do OSM utilizados no estudo.
+
+---
+
+## Ingestão histórica em PostGIS
+
+As primeiras etapas do MapAcess também envolveram a integração de dados provenientes do OSM e de fontes oficiais de Salvador em PostgreSQL/PostGIS.
+
+Os scripts utilizados nessa etapa foram preservados em:
+
+```text
+scripts/ingestion/
+├── ingest_osm.sh
+└── ingest_sefaz.sh
+```
+
+Essa estrutura corresponde a uma etapa anterior do desenvolvimento do projeto e é mantida no repositório para documentação e rastreabilidade metodológica.
+
+---
+
+## Resultados
+
+Os resultados exploratórios anteriores estão armazenados em:
+
+```text
+results/exploratory/
+```
+
+As próximas análises do estudo serão organizadas em:
+
+```text
+results/tables/
+results/figures/
+```
+
+e os respectivos códigos serão desenvolvidos em:
+
+```text
+scripts/analysis/
+```
+
+A análise principal será baseada na comparação entre os estados T0 e T1, contemplando representação geométrica, completude semântica e consistência topológica.
+
+---
+
+## Referências e documentação
+
+Materiais bibliográficos utilizados no desenvolvimento do projeto encontram-se em:
+
+```text
+references/
+```
+
+Documentação operacional, materiais do protocolo e informações sobre o ambiente computacional encontram-se em:
+
+```text
+docs/
+```
+
+---
+
+## Créditos
+
+**Dados e metodologia de referência:** Danielle Marques Cazumba
+**Desenvolvimento, processamento geoespacial e automação:** Felipe Reis da Cruz
+**Instituição:** Universidade Federal da Bahia — Escola Politécnica — Laboratório de Fotogrametria e Sensoriamento Remoto
+
+---
+
+## Status do projeto
+
+O projeto encontra-se em desenvolvimento.
+
+A estrutura de aquisição dos dados históricos e os estados T0 e T1 estão consolidados. As etapas seguintes compreendem a análise quantitativa e espacial dos dados, produção das tabelas e figuras e consolidação dos resultados do estudo científico.
+
 ```

@@ -1,0 +1,24 @@
+# Ambientes virtuais Python
+.venv/
+venv/
+env/
+
+# Cache e arquivos compilados Python
+__pycache__/
+*.py[cod]
+
+# Configurações locais de IDE
+.vscode/
+.idea/
+
+# Temporários do QGIS / GeoPackage
+*.qgz~
+*.qgs~
+*.gpkg-wal
+*.gpkg-shm
+*.gpkg-journal
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+*~

@@ -1,0 +1,544 @@
+{
+  "attribution" : {
+    "url" : "https://ohsome.org/copyrights",
+    "text" : "© OpenStreetMap contributors"
+  },
+  "apiVersion" : "1.10.4",
+  "type" : "FeatureCollection",
+  "features" : [{
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5228324,
+          -13.0034912
+        ],
+        [
+          -38.5226955,
+          -13.0035807
+        ],
+        [
+          -38.5226676,
+          -13.003603
+        ],
+        [
+          -38.5226444,
+          -13.003624
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "way/396232528",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 5,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5224662,
+          -13.0037946
+        ],
+        [
+          -38.5224497,
+          -13.003808
+        ],
+        [
+          -38.5223718,
+          -13.0038709
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 85578220,
+      "@osmId" : "way/396232531",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 4,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5215197,
+          -13.0028663
+        ],
+        [
+          -38.5216106,
+          -13.0027969
+        ],
+        [
+          -38.521627,
+          -13.0027834
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 134920863,
+      "@osmId" : "way/807012501",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5217755,
+          -13.0026792
+        ],
+        [
+          -38.521845,
+          -13.0026269
+        ],
+        [
+          -38.5218693,
+          -13.002606
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 134920863,
+      "@osmId" : "way/807012502",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.523313,
+          -13.0070464
+        ],
+        [
+          -38.5232758,
+          -13.0070539
+        ],
+        [
+          -38.5232224,
+          -13.0070642
+        ],
+        [
+          -38.5231646,
+          -13.0070739
+        ],
+        [
+          -38.5231125,
+          -13.0070827
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 134920863,
+      "@osmId" : "way/972072091",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 2,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5244052,
+          -13.0084916
+        ],
+        [
+          -38.5243919,
+          -13.0083801
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 39296528,
+      "@osmId" : "way/396220330",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "LineString",
+      "coordinates" : [
+        [
+          -38.5245848,
+          -13.0096994
+        ],
+        [
+          -38.5245777,
+          -13.0096853
+        ],
+        [
+          -38.5245481,
+          -13.00962
+        ]
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 133808007,
+      "@osmId" : "way/396220337",
+      "@osmType" : "way",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 6,
+      "bicycle" : "yes",
+      "footway" : "crossing",
+      "highway" : "footway",
+      "surface" : "dirt"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5218693,
+        -13.002606
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/347634148",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 15,
+      "crossing" : "uncontrolled",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5223718,
+        -13.0038709
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/1492981519",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 9,
+      "crossing" : "traffic_signals",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5244052,
+        -13.0084916
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 85578220,
+      "@osmId" : "node/1825714402",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 6,
+      "crossing" : "traffic_signals",
+      "highway" : "crossing",
+      "source" : "Bing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5245481,
+        -13.00962
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 133808002,
+      "@osmId" : "node/1825714411",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 11,
+      "button_operated" : "no",
+      "crossing" : "traffic_signals",
+      "crossing:island" : "no",
+      "crossing_ref" : "zebra",
+      "highway" : "crossing",
+      "traffic_signals:sound" : "no",
+      "traffic_signals:vibration" : "no"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.523313,
+        -13.0070464
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141629236,
+      "@osmId" : "node/3939063532",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 7,
+      "crossing" : "uncontrolled",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5233546,
+        -13.0079364
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 156720959,
+      "@osmId" : "node/3939063713",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 6,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5243488,
+        -13.009613
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 150662525,
+      "@osmId" : "node/3990126390",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 7,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5226955,
+        -13.0035807
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/3990218863",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 6,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5253938,
+        -13.0091963
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 150662525,
+      "@osmId" : "node/6616051037",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 2,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5249002,
+        -13.0093565
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 150662525,
+      "@osmId" : "node/6616051038",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 2,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5232067,
+        -13.0054988
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/7258402842",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5242462,
+        -13.0054042
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 109579244,
+      "@osmId" : "node/7258878508",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "crossing" : "uncontrolled",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5234063,
+        -13.0055064
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/7546562384",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 2,
+      "crossing" : "marked",
+      "crossing:markings" : "yes",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5215197,
+        -13.0028663
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/7546588589",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 3,
+      "crossing" : "traffic_signals",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5231125,
+        -13.0070827
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 109480665,
+      "@osmId" : "node/8996822971",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 1,
+      "crossing" : "uncontrolled",
+      "highway" : "crossing"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [
+        -38.5234004,
+        -13.0047488
+      ]
+    },
+    "properties" : {
+      "@changesetId" : 141705993,
+      "@osmId" : "node/11216915148",
+      "@osmType" : "node",
+      "@validFrom" : "2025-11-18T14:28:09Z",
+      "@validTo" : "2025-11-18T14:28:10Z",
+      "@version" : 1,
+      "highway" : "crossing"
+    }
+  }]
+}
