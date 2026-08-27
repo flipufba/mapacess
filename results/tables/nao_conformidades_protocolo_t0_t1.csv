@@ -1,0 +1,16 @@
+estado,osm_id,classe,atributo,valor,tipo_nao_conformidade,descricao
+T1,way/1453574914,Calçadas,smoothness,intermediate,fora_vocabulario_protocolo,Valor não previsto no vocabulário adotado pelo protocolo para esta classe. Isso não implica que o valor seja inválido no OpenStreetMap.
+T1,way/1459630750,Calçadas,smoothness,intermediate,fora_vocabulario_protocolo,Valor não previsto no vocabulário adotado pelo protocolo para esta classe. Isso não implica que o valor seja inválido no OpenStreetMap.
+T1,way/1459640305,Calçadas,smoothness,intermediate,fora_vocabulario_protocolo,Valor não previsto no vocabulário adotado pelo protocolo para esta classe. Isso não implica que o valor seja inválido no OpenStreetMap.
+T1,node/13386582734,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13386582735,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387148875,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387148876,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387242264,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387242268,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387242273,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13387242275,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13447284834,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13447284835,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13447284887,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.
+T1,node/13447284894,Nós de meio-fio,wheelchair,,atributo_condicional_ausente,O protocolo prescreve wheelchair=no para nós de meio-fio classificados como kerb=raised.

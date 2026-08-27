@@ -1,0 +1,33 @@
+estado,classe,atributo,valor,quantidade,total_preenchidos,percentual_dentro_atributo
+T0,Nós de travessia,crossing,marked,7,15,46.7
+T0,Nós de travessia,crossing,traffic_signals,4,15,26.7
+T0,Nós de travessia,crossing,uncontrolled,4,15,26.7
+T0,Nós de travessia,crossing:markings,yes,7,7,100.0
+T1,Calçadas,surface,concrete,31,37,83.8
+T1,Calçadas,surface,paving_stones,4,37,10.8
+T1,Calçadas,surface,concreto,1,37,2.7
+T1,Calçadas,surface,sett,1,37,2.7
+T1,Calçadas,smoothness,good,19,33,57.6
+T1,Calçadas,smoothness,bad,9,33,27.3
+T1,Calçadas,smoothness,intermediate,3,33,9.1
+T1,Calçadas,smoothness,excellent,2,33,6.1
+T1,Calçadas,tactile_paving,no,18,30,60.0
+T1,Calçadas,tactile_paving,yes,12,30,40.0
+T1,Travessias lineares,crossing,marked,15,15,100.0
+T1,Travessias lineares,crossing:markings,zebra,14,15,93.3
+T1,Travessias lineares,crossing:markings,yes,1,15,6.7
+T1,Travessias lineares,wheelchair,no,7,11,63.6
+T1,Travessias lineares,wheelchair,yes,4,11,36.4
+T1,Nós de meio-fio,kerb,raised,20,34,58.8
+T1,Nós de meio-fio,kerb,lowered,10,34,29.4
+T1,Nós de meio-fio,kerb,flush,4,34,11.8
+T1,Nós de meio-fio,tactile_paving,no,12,13,92.3
+T1,Nós de meio-fio,tactile_paving,yes,1,13,7.7
+T1,Nós de travessia,crossing,uncontrolled,12,23,52.2
+T1,Nós de travessia,crossing,marked,5,23,21.7
+T1,Nós de travessia,crossing,traffic_signals,4,23,17.4
+T1,Nós de travessia,crossing,unmarked,1,23,4.3
+T1,Nós de travessia,crossing,zebra,1,23,4.3
+T1,Nós de travessia,crossing:markings,zebra,9,18,50.0
+T1,Nós de travessia,crossing:markings,yes,7,18,38.9
+T1,Nós de travessia,crossing:markings,no,2,18,11.1
