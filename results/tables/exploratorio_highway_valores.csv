@@ -1,0 +1,139 @@
+highway,total_classe,atributo,valor,quantidade,total_com_atributo,percentual_dentro_atributo
+service,37,access,yes,1,1,100.0
+service,37,covered,yes,1,1,100.0
+service,37,description,Shopping Barra,11,11,100.0
+service,37,layer,-1,1,1,100.0
+service,37,maxspeed,20,15,15,100.0
+service,37,name,Rua Airosa Galvão,3,9,33.3
+service,37,name,Rua Cardeal Enrico Dante,3,9,33.3
+service,37,name,Avenida Artur Neiva,1,9,11.1
+service,37,name,Avenida Princesa Leopoldina,1,9,11.1
+service,37,name,Rua Fernão de Magalhães,1,9,11.1
+service,37,oneway,yes,25,25,100.0
+service,37,service,parking_aisle,12,13,92.3
+service,37,service,driveway,1,13,7.7
+service,37,source,Bing,7,14,50.0
+service,37,source,knowledge,7,14,50.0
+service,37,surface,paved,17,20,85.0
+service,37,surface,asphalt,2,20,10.0
+service,37,surface,concrete,1,20,5.0
+service,37,tunnel,building_passage,1,2,50.0
+service,37,tunnel,yes,1,2,50.0
+service,37,width,6,10,10,100.0
+footway,34,alt_name,1ª Travessa Eduardo Diniz Gonçalves,1,1,100.0
+footway,34,bicycle,yes,21,21,100.0
+footway,34,bridge,viaduct,3,3,100.0
+footway,34,footway,crossing,7,7,100.0
+footway,34,layer,5,3,3,100.0
+footway,34,lit,yes,1,1,100.0
+footway,34,name,Primeira Travessa Eduardo Diniz Gonçalves,1,2,50.0
+footway,34,name,Roça da Sabina,1,2,50.0
+footway,34,surface,asphalt,1,6,16.7
+footway,34,surface,concrete,1,6,16.7
+footway,34,surface,dirt,1,6,16.7
+footway,34,surface,grass_paver,1,6,16.7
+footway,34,surface,paved,1,6,16.7
+footway,34,surface,paving_stones,1,6,16.7
+residential,17,access,private,1,1,100.0
+residential,17,alt_name,Rua Martagao Gesteira,1,1,100.0
+residential,17,lane_markings,no,1,1,100.0
+residential,17,lit,yes,2,2,100.0
+residential,17,maxspeed:type,BR:urban,2,2,100.0
+residential,17,name,Rua Belo Horizonte,2,15,13.3
+residential,17,name,Rua Desembargador Baldoino Andrade,2,15,13.3
+residential,17,name,Rua Djalma Ramos,2,15,13.3
+residential,17,name,Rua Juiz Rosalvo Torres,2,15,13.3
+residential,17,name,Rua Ary Barroso,1,15,6.7
+residential,17,name,Rua Doutor Deraldo Dias de Morais,1,15,6.7
+residential,17,name,Rua Eduardo Diniz Gonçalves,1,15,6.7
+residential,17,name,Rua Leoni Ramos,1,15,6.7
+residential,17,name,Rua Plínio Moscoso,1,15,6.7
+residential,17,name,Rua Professor Fernando Luz,1,15,6.7
+residential,17,name,Rua Professor Martagão Gesteira,1,15,6.7
+residential,17,note,Spelling difference: Rua Ari Barroso (IBGE) vs Rua Ary Barroso(OSM),1,1,100.0
+residential,17,oneway,yes,13,13,100.0
+residential,17,source,Yahoo,6,8,75.0
+residential,17,source,Bing,2,8,25.0
+residential,17,source:date,22-04-2014,1,1,100.0
+residential,17,surface,asphalt,5,5,100.0
+residential,17,width,6,1,1,100.0
+crossing,16,button_operated,no,1,1,100.0
+crossing,16,crossing,marked,7,15,46.7
+crossing,16,crossing,traffic_signals,4,15,26.7
+crossing,16,crossing,uncontrolled,4,15,26.7
+crossing,16,crossing:island,no,1,1,100.0
+crossing,16,crossing:markings,yes,7,7,100.0
+crossing,16,crossing_ref,zebra,1,1,100.0
+crossing,16,source,Bing,1,1,100.0
+crossing,16,traffic_signals:sound,no,1,1,100.0
+crossing,16,traffic_signals:vibration,no,1,1,100.0
+primary,11,bicycle,yes,1,1,100.0
+primary,11,bicycle:conditional,yes @ (04:00 - 06:00),4,4,100.0
+primary,11,cycleway:right,lane,4,4,100.0
+primary,11,lanes,3,8,11,72.7
+primary,11,lanes,2,3,11,27.3
+primary,11,lanes:forward,2,1,1,100.0
+primary,11,maxspeed,70,8,9,88.9
+primary,11,maxspeed,60,1,9,11.1
+primary,11,name,Avenida Centenário,8,11,72.7
+primary,11,name,Avenida Oceânica,1,11,9.1
+primary,11,name,Rua Airosa Galvão,1,11,9.1
+primary,11,name,Rua Arthur Neiva,1,11,9.1
+primary,11,note,There is a difference between IBGE data (Rua Doutor Artur Neiva) and OSM data (Rua Arthur Neiva),1,1,100.0
+primary,11,oneway,yes,10,11,90.9
+primary,11,oneway,no,1,11,9.1
+primary,11,oneway:bicycle,no,1,1,100.0
+primary,11,surface,asphalt,7,10,70.0
+primary,11,surface,paved,3,10,30.0
+primary,11,width,6,4,4,100.0
+tertiary,11,bicycle,yes,2,2,100.0
+tertiary,11,cycleway:left,lane,3,3,100.0
+tertiary,11,foot,yes,1,1,100.0
+tertiary,11,incline,10%,1,1,100.0
+tertiary,11,lanes,2,8,11,72.7
+tertiary,11,lanes,3,2,11,18.2
+tertiary,11,lanes,1,1,11,9.1
+tertiary,11,lanes:forward,2,1,1,100.0
+tertiary,11,maxspeed,60,2,3,66.7
+tertiary,11,maxspeed,70,1,3,33.3
+tertiary,11,name,Avenida Centenário,4,11,36.4
+tertiary,11,name,Avenida Oceânica,2,11,18.2
+tertiary,11,name,Rua Augusto Frederico Schmidt,1,11,9.1
+tertiary,11,name,Rua Doutor José Serafim,1,11,9.1
+tertiary,11,name,Rua José Sátiro de Oliveira,1,11,9.1
+tertiary,11,name,Rua Manoel Barreto,1,11,9.1
+tertiary,11,name,Rua Miguel Burnier,1,11,9.1
+tertiary,11,oneway,yes,8,11,72.7
+tertiary,11,oneway,no,3,11,27.3
+tertiary,11,oneway:bicycle,no,3,3,100.0
+tertiary,11,source,Bing,1,1,100.0
+tertiary,11,source:date,2012-07-24,1,1,100.0
+tertiary,11,surface,asphalt,5,5,100.0
+cycleway,10,bicycle,yes,6,8,75.0
+cycleway,10,bicycle,designated,2,8,25.0
+cycleway,10,cycleway,crossing,2,2,100.0
+cycleway,10,foot,designated,8,8,100.0
+cycleway,10,oneway,no,7,7,100.0
+cycleway,10,surface,paved,5,7,71.4
+cycleway,10,surface,concrete,1,7,14.3
+cycleway,10,surface,paving_stones,1,7,14.3
+cycleway,10,width,2.5,1,1,100.0
+secondary,5,lanes,2,3,5,60.0
+secondary,5,lanes,1,1,5,20.0
+secondary,5,lanes,3,1,5,20.0
+secondary,5,lit,yes,1,1,100.0
+secondary,5,maxspeed,40,2,2,100.0
+secondary,5,name,Rua Professor Sabino Silva,3,5,60.0
+secondary,5,name,Rua Comendador Francisco Fedreira,2,5,40.0
+secondary,5,oneway,yes,5,5,100.0
+secondary,5,surface,asphalt,5,5,100.0
+primary_link,1,lanes,2,1,1,100.0
+primary_link,1,oneway,yes,1,1,100.0
+steps,1,handrail,no,1,1,100.0
+steps,1,incline,down,1,1,100.0
+steps,1,ramp,no,1,1,100.0
+steps,1,step_count,30,1,1,100.0
+steps,1,surface,concrete,1,1,100.0
+tertiary_link,1,lanes,1,1,1,100.0
+tertiary_link,1,oneway,yes,1,1,100.0
+tertiary_link,1,source,Bing,1,1,100.0
