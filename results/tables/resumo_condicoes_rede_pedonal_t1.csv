@@ -1,0 +1,41 @@
+dimensao,elemento,criterio,nivel_evidencia,quantidade,total_universo,percentual_universo,valores_observados,interpretacao
+configuracao_infraestrutura,no_meio_fio,rebaixamento_com_travessia_linear,condicao_critica_oportunidade_melhoria,2,14,14.3,nao:2,Rebaixamento corretamente mapeado sem travessia linear correspondente; o caso pode representar oportunidade de melhoria da infraestrutura real.
+configuracao_infraestrutura,no_meio_fio,rebaixamento_com_travessia_linear,sem_evidencia_negativa_no_criterio,12,14,85.7,sim:12,O rebaixamento apresenta correspondência geométrica com travessia linear.
+continuidade_rede,calcada,extremidades_conectadas_rede,requer_inspecao_interpretativa,17,39,43.6,0_de_2:5 | 1_de_2:12,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.
+continuidade_rede,calcada,extremidades_conectadas_rede,sem_evidencia_negativa_no_criterio,22,39,56.4,2_de_2:22,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.
+continuidade_rede,no_travessia,correspondencia_travessia_linear,requer_inspecao_interpretativa,4,24,16.7,nao:4,O nó não apresenta correspondência geométrica com travessia linear. A situação requer interpretação e não é classificada automaticamente como erro.
+continuidade_rede,no_travessia,correspondencia_travessia_linear,sem_evidencia_negativa_no_criterio,20,24,83.3,sim:20,O nó apresenta correspondência geométrica com travessia linear.
+continuidade_rede,travessia_linear,extremidades_em_calcadas,requer_inspecao_interpretativa,4,19,21.1,0_de_2:3 | 1_de_2:1,Uma ou mais extremidades não apresentam correspondência geométrica com calçada. A situação requer interpretação.
+continuidade_rede,travessia_linear,extremidades_em_calcadas,sem_evidencia_negativa_no_criterio,15,19,78.9,2_de_2:15,As duas extremidades apresentam correspondência geométrica com calçadas.
+mobilidade_fisica,calcada,smoothness,condicao_critica_oportunidade_melhoria,3,39,7.7,intermediate:3,Condição intermediária do pavimento; recomenda-se avaliação ou inspeção mais detalhada.
+mobilidade_fisica,calcada,smoothness,impedimento_restricao_identificada,9,39,23.1,bad:9,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida."
+mobilidade_fisica,calcada,smoothness,indeterminado,6,39,15.4,<ausente>:6,Condição aparente do pavimento não determinada.
+mobilidade_fisica,calcada,smoothness,sem_evidencia_negativa_no_criterio,21,39,53.8,excellent:2 | good:19,Não foi identificada condição desfavorável neste critério.
+mobilidade_fisica,no_meio_fio,kerb,impedimento_restricao_identificada,20,34,58.8,raised:20,"Meio-fio elevado, representando desnível na transição entre calçada e via."
+mobilidade_fisica,no_meio_fio,kerb,sem_evidencia_negativa_no_criterio,14,34,41.2,flush:4 | lowered:10,Não foi identificado desnível elevado neste critério.
+mobilidade_fisica,no_meio_fio,wheelchair,impedimento_restricao_identificada,9,34,26.5,limited:1 | no:8,Restrição de mobilidade registrada para usuários de cadeira de rodas.
+mobilidade_fisica,no_meio_fio,wheelchair,indeterminado,21,34,61.8,<ausente>:21,Condição de utilização por cadeira de rodas não determinada.
+mobilidade_fisica,no_meio_fio,wheelchair,sem_evidencia_negativa_no_criterio,4,34,11.8,yes:4,Não foi registrada restrição para cadeira de rodas neste critério.
+mobilidade_fisica,travessia_linear,wheelchair,impedimento_restricao_identificada,7,19,36.8,no:7,Restrição de mobilidade registrada para usuários de cadeira de rodas.
+mobilidade_fisica,travessia_linear,wheelchair,indeterminado,8,19,42.1,<ausente>:8,A condição de utilização por cadeira de rodas não foi determinada.
+mobilidade_fisica,travessia_linear,wheelchair,sem_evidencia_negativa_no_criterio,4,19,21.1,yes:4,Não foi registrada restrição para cadeira de rodas neste critério.
+orientacao_visual_sensorial,calcada,tactile_paving,impedimento_restricao_identificada,18,39,46.2,no:18,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial."
+orientacao_visual_sensorial,calcada,tactile_paving,indeterminado,9,39,23.1,<ausente>:9,Não há informação suficiente para determinar a presença de orientação tátil no trecho.
+orientacao_visual_sensorial,calcada,tactile_paving,recurso_acessibilidade_presente,12,39,30.8,yes:12,Presença registrada de recurso de orientação tátil.
+orientacao_visual_sensorial,no_meio_fio,tactile_paving,impedimento_restricao_identificada,12,34,35.3,no:12,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.
+orientacao_visual_sensorial,no_meio_fio,tactile_paving,indeterminado,21,34,61.8,<ausente>:21,Não há informação suficiente para determinar a presença de sinalização tátil na interface.
+orientacao_visual_sensorial,no_meio_fio,tactile_paving,recurso_acessibilidade_presente,1,34,2.9,yes:1,Presença registrada de sinalização tátil.
+qualidade_informacional,calcada,surface,qualidade_dado,1,39,2.6,concreto:1,Valor não padronizado em relação à etiquetagem utilizada no conjunto analisado; recomenda-se normalização.
+superficie,calcada,surface,caracterizacao_contextual,31,39,79.5,concrete:31,Material da superfície registrado para caracterização física do trecho.
+superficie,calcada,surface,condicao_critica_oportunidade_melhoria,5,39,12.8,paving_stones:4 | sett:1,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.
+superficie,calcada,surface,indeterminado,2,39,5.1,<ausente>:2,Material da superfície não informado.
+travessia_seguranca,no_travessia,crossing,caracterizacao_contextual,22,24,91.7,marked:5 | traffic_signals:4 | uncontrolled:12 | zebra:1,Tipo de travessia registrado.
+travessia_seguranca,no_travessia,crossing,condicao_critica_oportunidade_melhoria,1,24,4.2,unmarked:1,Travessia registrada como não demarcada.
+travessia_seguranca,no_travessia,crossing,indeterminado,1,24,4.2,<ausente>:1,Tipo de travessia não informado.
+travessia_seguranca,no_travessia,crossing:markings,caracterizacao_contextual,16,24,66.7,yes:7 | zebra:9,Demarcação da travessia registrada.
+travessia_seguranca,no_travessia,crossing:markings,condicao_critica_oportunidade_melhoria,2,24,8.3,no:2,Ausência explícita de demarcação da travessia.
+travessia_seguranca,no_travessia,crossing:markings,indeterminado,6,24,25.0,<ausente>:6,Informação sobre demarcação da travessia ausente.
+travessia_seguranca,travessia_linear,crossing,caracterizacao_contextual,15,19,78.9,marked:15,Tipo de travessia registrado para caracterização da infraestrutura.
+travessia_seguranca,travessia_linear,crossing,indeterminado,4,19,21.1,<ausente>:4,Tipo de travessia não informado.
+travessia_seguranca,travessia_linear,crossing:markings,caracterizacao_contextual,15,19,78.9,yes:1 | zebra:14,Demarcação da travessia registrada.
+travessia_seguranca,travessia_linear,crossing:markings,indeterminado,4,19,21.1,<ausente>:4,Informação de demarcação da travessia ausente.

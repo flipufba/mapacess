@@ -1,0 +1,421 @@
+osm_id,elemento,dimensao,criterio,valor_observado,nivel_evidencia,interpretacao,total_universo_criterio
+way/1451659283,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1451659283,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1451659283,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1451659283,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1458073735,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1458073735,calcada,superficie,surface,paving_stones,condicao_critica_oportunidade_melhoria,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.,39
+way/1458073735,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1458073735,calcada,continuidade_rede,extremidades_conectadas_rede,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/470033389,calcada,mobilidade_fisica,smoothness,excellent,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/470033389,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/470033389,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/470033389,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1451659284,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1451659284,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1451659284,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1451659284,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1451659285,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1451659285,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1451659285,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1451659285,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453405510,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1453405510,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453405510,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1453405510,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1453564362,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1453564362,calcada,superficie,surface,,indeterminado,Material da superfície não informado.,39
+way/1453564362,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1453564362,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453564363,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1453564363,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453564363,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1453564363,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453573066,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1453573066,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453573066,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1453573066,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453574913,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1453574913,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453574913,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1453574913,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453574914,calcada,mobilidade_fisica,smoothness,intermediate,condicao_critica_oportunidade_melhoria,Condição intermediária do pavimento; recomenda-se avaliação ou inspeção mais detalhada.,39
+way/1453574914,calcada,superficie,surface,sett,condicao_critica_oportunidade_melhoria,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.,39
+way/1453574914,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1453574914,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453574915,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1453574915,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453574915,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1453574915,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1453577319,calcada,mobilidade_fisica,smoothness,,indeterminado,Condição aparente do pavimento não determinada.,39
+way/1453577319,calcada,superficie,surface,,indeterminado,Material da superfície não informado.,39
+way/1453577319,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1453577319,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1453600573,calcada,mobilidade_fisica,smoothness,excellent,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1453600573,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1453600573,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1453600573,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459568213,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459568213,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459568213,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459568213,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459568214,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459568214,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459568214,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459568214,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459568215,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459568215,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459568215,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459568215,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630734,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459630734,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630734,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459630734,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630735,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630735,calcada,superficie,surface,paving_stones,condicao_critica_oportunidade_melhoria,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.,39
+way/1459630735,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459630735,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630736,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459630736,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630736,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459630736,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630737,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630737,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630737,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630737,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630738,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459630738,calcada,superficie,surface,paving_stones,condicao_critica_oportunidade_melhoria,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.,39
+way/1459630738,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630738,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459630739,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630739,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630739,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630739,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459630740,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630740,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630740,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630740,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459630749,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630749,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630749,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630749,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459630750,calcada,mobilidade_fisica,smoothness,intermediate,condicao_critica_oportunidade_melhoria,Condição intermediária do pavimento; recomenda-se avaliação ou inspeção mais detalhada.,39
+way/1459630750,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459630750,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459630750,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1459640304,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459640304,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459640304,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459640304,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459640305,calcada,mobilidade_fisica,smoothness,intermediate,condicao_critica_oportunidade_melhoria,Condição intermediária do pavimento; recomenda-se avaliação ou inspeção mais detalhada.,39
+way/1459640305,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459640305,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459640305,calcada,continuidade_rede,extremidades_conectadas_rede,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459640306,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1459640306,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459640306,calcada,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de recurso de orientação tátil.,39
+way/1459640306,calcada,continuidade_rede,extremidades_conectadas_rede,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1466119802,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466119802,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466119802,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1466119802,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1466128233,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466128233,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466128233,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1466128233,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1466128234,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466128234,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466128234,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1466128234,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1466128236,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1466128236,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466128236,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1466128236,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1466128237,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466128237,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466128237,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1466128237,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1466128241,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466128241,calcada,superficie,surface,paving_stones,condicao_critica_oportunidade_melhoria,Material que pode demandar inspeção quanto à regularidade e trepidação. O material isoladamente não determina uma barreira.,39
+way/1466128241,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1466128241,calcada,continuidade_rede,extremidades_conectadas_rede,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459630751,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459630751,calcada,qualidade_informacional,surface,concreto,qualidade_dado,Valor não padronizado em relação à etiquetagem utilizada no conjunto analisado; recomenda-se normalização.,39
+way/1459630751,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1459630751,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1459640303,calcada,mobilidade_fisica,smoothness,bad,impedimento_restricao_identificada,"Condição ruim do pavimento, capaz de dificultar o deslocamento de usuários com mobilidade reduzida.",39
+way/1459640303,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1459640303,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1459640303,calcada,continuidade_rede,extremidades_conectadas_rede,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com outra calçada ou travessia.,39
+way/1466119801,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1466119801,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1466119801,calcada,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de orientação tátil no trecho.,39
+way/1466119801,calcada,continuidade_rede,extremidades_conectadas_rede,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/1468558426,calcada,mobilidade_fisica,smoothness,good,sem_evidencia_negativa_no_criterio,Não foi identificada condição desfavorável neste critério.,39
+way/1468558426,calcada,superficie,surface,concrete,caracterizacao_contextual,Material da superfície registrado para caracterização física do trecho.,39
+way/1468558426,calcada,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,"Ausência explicitamente registrada de piso tátil, interpretada no estudo como restrição à orientação sensorial.",39
+way/1468558426,calcada,continuidade_rede,extremidades_conectadas_rede,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica no conjunto analisado. A situação não é tratada automaticamente como erro.,39
+way/396232531,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/396232531,travessia_linear,travessia_seguranca,crossing,,indeterminado,Tipo de travessia não informado.,19
+way/396232531,travessia_linear,travessia_seguranca,crossing:markings,,indeterminado,Informação de demarcação da travessia ausente.,19
+way/396232531,travessia_linear,continuidade_rede,extremidades_em_calcadas,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica com calçada. A situação requer interpretação.,19
+way/807012501,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/807012501,travessia_linear,travessia_seguranca,crossing,,indeterminado,Tipo de travessia não informado.,19
+way/807012501,travessia_linear,travessia_seguranca,crossing:markings,,indeterminado,Informação de demarcação da travessia ausente.,19
+way/807012501,travessia_linear,continuidade_rede,extremidades_em_calcadas,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica com calçada. A situação requer interpretação.,19
+way/807012502,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/807012502,travessia_linear,travessia_seguranca,crossing,,indeterminado,Tipo de travessia não informado.,19
+way/807012502,travessia_linear,travessia_seguranca,crossing:markings,,indeterminado,Informação de demarcação da travessia ausente.,19
+way/807012502,travessia_linear,continuidade_rede,extremidades_em_calcadas,0_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica com calçada. A situação requer interpretação.,19
+way/972072091,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/972072091,travessia_linear,travessia_seguranca,crossing,,indeterminado,Tipo de travessia não informado.,19
+way/972072091,travessia_linear,travessia_seguranca,crossing:markings,,indeterminado,Informação de demarcação da travessia ausente.,19
+way/972072091,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1453600574,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/1453600574,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1453600574,travessia_linear,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1453600574,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1458074788,travessia_linear,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,19
+way/1458074788,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1458074788,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1458074788,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459630752,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1459630752,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459630752,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459630752,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1453405511,travessia_linear,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,19
+way/1453405511,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1453405511,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1453405511,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1453405512,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1453405512,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1453405512,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1453405512,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1453588582,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/1453588582,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1453588582,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1453588582,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459568216,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/1459568216,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459568216,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459568216,travessia_linear,continuidade_rede,extremidades_em_calcadas,1_de_2,requer_inspecao_interpretativa,Uma ou mais extremidades não apresentam correspondência geométrica com calçada. A situação requer interpretação.,19
+way/1459568217,travessia_linear,mobilidade_fisica,wheelchair,,indeterminado,A condição de utilização por cadeira de rodas não foi determinada.,19
+way/1459568217,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459568217,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459568217,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459630753,travessia_linear,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,19
+way/1459630753,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459630753,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459630753,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459640307,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1459640307,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459640307,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459640307,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459640308,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1459640308,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459640308,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459640308,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459640309,travessia_linear,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,19
+way/1459640309,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459640309,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459640309,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1459640310,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1459640310,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1459640310,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1459640310,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1466128232,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1466128232,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1466128232,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1466128232,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+way/1466128235,travessia_linear,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,19
+way/1466128235,travessia_linear,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado para caracterização da infraestrutura.,19
+way/1466128235,travessia_linear,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,19
+way/1466128235,travessia_linear,continuidade_rede,extremidades_em_calcadas,2_de_2,sem_evidencia_negativa_no_criterio,As duas extremidades apresentam correspondência geométrica com calçadas.,19
+node/13313710169,no_meio_fio,mobilidade_fisica,kerb,flush,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13313710169,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13313710169,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13313734710,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13313734710,no_meio_fio,mobilidade_fisica,wheelchair,limited,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13313734710,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13328865751,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13328865751,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13328865751,no_meio_fio,orientacao_visual_sensorial,tactile_paving,yes,recurso_acessibilidade_presente,Presença registrada de sinalização tátil.,34
+node/13328865755,no_meio_fio,mobilidade_fisica,kerb,flush,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13328865755,no_meio_fio,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,34
+node/13328865755,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330390486,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330390486,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330390486,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330390492,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330390492,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330390492,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330390493,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330390493,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330390493,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330390494,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330390494,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330390494,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330390495,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330390495,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330390495,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330407752,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330407752,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330407752,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330610449,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330610449,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330610449,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13330610451,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13330610451,no_meio_fio,mobilidade_fisica,wheelchair,no,impedimento_restricao_identificada,Restrição de mobilidade registrada para usuários de cadeira de rodas.,34
+node/13330610451,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13371909000,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13371909000,no_meio_fio,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,34
+node/13371909000,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13372021001,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13372021001,no_meio_fio,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,34
+node/13372021001,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13386540230,no_meio_fio,mobilidade_fisica,kerb,flush,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13386540230,no_meio_fio,mobilidade_fisica,wheelchair,yes,sem_evidencia_negativa_no_criterio,Não foi registrada restrição para cadeira de rodas neste critério.,34
+node/13386540230,no_meio_fio,orientacao_visual_sensorial,tactile_paving,no,impedimento_restricao_identificada,Ausência explicitamente registrada de sinalização tátil na interface de meio-fio.,34
+node/13386582734,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13386582734,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13386582734,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13386582735,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13386582735,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13386582735,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387106469,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387106469,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387106469,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387106470,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387106470,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387106470,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387148875,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387148875,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387148875,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387148876,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387148876,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387148876,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387148878,no_meio_fio,mobilidade_fisica,kerb,flush,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387148878,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387148878,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242264,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387242264,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242264,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242265,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387242265,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242265,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242266,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387242266,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242266,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242268,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387242268,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242268,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242270,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387242270,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242270,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242271,no_meio_fio,mobilidade_fisica,kerb,lowered,sem_evidencia_negativa_no_criterio,Não foi identificado desnível elevado neste critério.,34
+node/13387242271,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242271,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242273,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387242273,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242273,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13387242275,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13387242275,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13387242275,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13447284834,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13447284834,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13447284834,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13447284835,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13447284835,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13447284835,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13447284887,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13447284887,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13447284887,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13447284894,no_meio_fio,mobilidade_fisica,kerb,raised,impedimento_restricao_identificada,"Meio-fio elevado, representando desnível na transição entre calçada e via.",34
+node/13447284894,no_meio_fio,mobilidade_fisica,wheelchair,,indeterminado,Condição de utilização por cadeira de rodas não determinada.,34
+node/13447284894,no_meio_fio,orientacao_visual_sensorial,tactile_paving,,indeterminado,Não há informação suficiente para determinar a presença de sinalização tátil na interface.,34
+node/13313710169,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13313734710,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,nao,condicao_critica_oportunidade_melhoria,Rebaixamento corretamente mapeado sem travessia linear correspondente; o caso pode representar oportunidade de melhoria da infraestrutura real.,14
+node/13328865751,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,nao,condicao_critica_oportunidade_melhoria,Rebaixamento corretamente mapeado sem travessia linear correspondente; o caso pode representar oportunidade de melhoria da infraestrutura real.,14
+node/13328865755,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13371909000,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13372021001,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13386540230,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387106469,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387106470,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387148878,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387242265,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387242266,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387242270,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/13387242271,no_meio_fio,configuracao_infraestrutura,rebaixamento_com_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O rebaixamento apresenta correspondência geométrica com travessia linear.,14
+node/347634148,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/347634148,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/347634148,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/1492981519,no_travessia,travessia_seguranca,crossing,traffic_signals,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/1492981519,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/1492981519,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/1825714393,no_travessia,travessia_seguranca,crossing,traffic_signals,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/1825714393,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/1825714393,no_travessia,continuidade_rede,correspondencia_travessia_linear,nao,requer_inspecao_interpretativa,O nó não apresenta correspondência geométrica com travessia linear. A situação requer interpretação e não é classificada automaticamente como erro.,24
+node/1825714411,no_travessia,travessia_seguranca,crossing,traffic_signals,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/1825714411,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/1825714411,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/4083503244,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/4083503244,no_travessia,travessia_seguranca,crossing:markings,no,condicao_critica_oportunidade_melhoria,Ausência explícita de demarcação da travessia.,24
+node/4083503244,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/6616051037,no_travessia,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/6616051037,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/6616051037,no_travessia,continuidade_rede,correspondencia_travessia_linear,nao,requer_inspecao_interpretativa,O nó não apresenta correspondência geométrica com travessia linear. A situação requer interpretação e não é classificada automaticamente como erro.,24
+node/6616051038,no_travessia,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/6616051038,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/6616051038,no_travessia,continuidade_rede,correspondencia_travessia_linear,nao,requer_inspecao_interpretativa,O nó não apresenta correspondência geométrica com travessia linear. A situação requer interpretação e não é classificada automaticamente como erro.,24
+node/7260340132,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/7260340132,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/7260340132,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/7546588589,no_travessia,travessia_seguranca,crossing,traffic_signals,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/7546588589,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/7546588589,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13313734727,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13313734727,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13313734727,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13328865757,no_travessia,travessia_seguranca,crossing,zebra,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13328865757,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13328865757,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13328865759,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13328865759,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13328865759,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13328865760,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13328865760,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13328865760,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13330390485,no_travessia,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13330390485,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13330390485,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13330390489,no_travessia,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13330390489,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13330390489,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13330610450,no_travessia,travessia_seguranca,crossing,marked,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13330610450,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13330610450,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13371915556,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13371915556,no_travessia,travessia_seguranca,crossing:markings,zebra,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13371915556,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13380028855,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13380028855,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13380028855,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13386582741,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13386582741,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13386582741,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13387242231,no_travessia,travessia_seguranca,crossing,,indeterminado,Tipo de travessia não informado.,24
+node/13387242231,no_travessia,travessia_seguranca,crossing:markings,,indeterminado,Informação sobre demarcação da travessia ausente.,24
+node/13387242231,no_travessia,continuidade_rede,correspondencia_travessia_linear,nao,requer_inspecao_interpretativa,O nó não apresenta correspondência geométrica com travessia linear. A situação requer interpretação e não é classificada automaticamente como erro.,24
+node/13387242267,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13387242267,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13387242267,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13387242274,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13387242274,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13387242274,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13447284833,no_travessia,travessia_seguranca,crossing,uncontrolled,caracterizacao_contextual,Tipo de travessia registrado.,24
+node/13447284833,no_travessia,travessia_seguranca,crossing:markings,yes,caracterizacao_contextual,Demarcação da travessia registrada.,24
+node/13447284833,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
+node/13447284893,no_travessia,travessia_seguranca,crossing,unmarked,condicao_critica_oportunidade_melhoria,Travessia registrada como não demarcada.,24
+node/13447284893,no_travessia,travessia_seguranca,crossing:markings,no,condicao_critica_oportunidade_melhoria,Ausência explícita de demarcação da travessia.,24
+node/13447284893,no_travessia,continuidade_rede,correspondencia_travessia_linear,sim,sem_evidencia_negativa_no_criterio,O nó apresenta correspondência geométrica com travessia linear.,24
