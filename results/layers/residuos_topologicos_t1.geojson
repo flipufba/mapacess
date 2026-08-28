@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.524298,
+          -13.0084988
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "no_crossing_fora_travessia",
+        "classe_analitica": "no_travessia",
+        "osm_id": "node/1825714393",
+        "kerb": null,
+        "wheelchair": null,
+        "crossing": "traffic_signals",
+        "crossing_markings": null,
+        "descricao": "Nó highway=crossing sem interseção geométrica com travessia linear footway=crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5253938,
+          -13.0091963
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "no_crossing_fora_travessia",
+        "classe_analitica": "no_travessia",
+        "osm_id": "node/6616051037",
+        "kerb": null,
+        "wheelchair": null,
+        "crossing": "marked",
+        "crossing_markings": "yes",
+        "descricao": "Nó highway=crossing sem interseção geométrica com travessia linear footway=crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5249002,
+          -13.0093565
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "no_crossing_fora_travessia",
+        "classe_analitica": "no_travessia",
+        "osm_id": "node/6616051038",
+        "kerb": null,
+        "wheelchair": null,
+        "crossing": "marked",
+        "crossing_markings": "yes",
+        "descricao": "Nó highway=crossing sem interseção geométrica com travessia linear footway=crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.523553,
+          -13.0077287
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "kerb_fora_travessia",
+        "classe_analitica": "no_meio_fio",
+        "osm_id": "node/13313734710",
+        "kerb": "lowered",
+        "wheelchair": "limited",
+        "crossing": null,
+        "crossing_markings": null,
+        "descricao": "Nó barrier=kerb sem interseção geométrica com travessia linear footway=crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5244871,
+          -13.0083823
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "kerb_fora_travessia",
+        "classe_analitica": "no_meio_fio",
+        "osm_id": "node/13328865751",
+        "kerb": "lowered",
+        "wheelchair": null,
+        "crossing": null,
+        "crossing_markings": null,
+        "descricao": "Nó barrier=kerb sem interseção geométrica com travessia linear footway=crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5237242,
+          -13.0057382
+        ]
+      },
+      "properties": {
+        "tipo_residuo": "no_crossing_fora_travessia",
+        "classe_analitica": "no_travessia",
+        "osm_id": "node/13387242231",
+        "kerb": null,
+        "wheelchair": null,
+        "crossing": null,
+        "crossing_markings": null,
+        "descricao": "Nó highway=crossing sem interseção geométrica com travessia linear footway=crossing"
+      }
+    }
+  ]
+}
